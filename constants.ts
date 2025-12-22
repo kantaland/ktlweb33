@@ -39,33 +39,6 @@ export const KANTA_BIO = {
 
 export const MOCK_PRESS: PressRelease[] = [
     {
-        id: 'p1',
-        title: "K.A.N.T.A: The Sonic Architect Defining Future Culture",
-        outlet: "GQ Japan",
-        date: "2024-02-10",
-        url: "https://www.gqjapan.jp",
-        snippet: "From the streets of Tokyo to the hills of Hollywood, K.A.N.T.A is rewriting the rules of independent artistry and brand collaboration.",
-        imageUrl: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop"
-    },
-    {
-        id: 'p2',
-        title: "Inside KANTALAND: The Digital Incubator",
-        outlet: "HYPEBEAST",
-        date: "2023-11-20",
-        url: "https://hypebeast.com",
-        snippet: "An exclusive look inside the invite-only digital ecosystem where music, fashion, and tech collide.",
-        imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop"
-    },
-    {
-        id: 'p3',
-        title: "The Future of Sound Branding",
-        outlet: "Forbes",
-        date: "2023-09-05",
-        url: "https://www.forbes.com",
-        snippet: "How K.A.N.T.A is using frequency and vibration to engineer the emotional identity of global superbrands.",
-        imageUrl: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop"
-    },
-    {
         id: 'p4',
         title: "K.A.N.T.A and Monheim Mic Channel Strip – Hollywood",
         outlet: "YouTube",
