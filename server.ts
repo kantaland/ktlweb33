@@ -72,10 +72,14 @@ app.post('/api/sync', async (req: Request, res: Response) => {
     
     // Check authorization
     if (authHeader !== 'Bearer KANTA0910') {
+      console.warn("Unauthorized sync attempt");
       return res.status(401).json({ error: 'Unauthorized' });
     }
 
     const body = req.body;
+    if (!body || typeof body !== 'object') {
+      return res.status(400).json({ error: 'Invalid payload' });
+    }
 
     // Upsert: Create if doesn't exist, update if it does
     await prisma.kantaStore.upsert({
@@ -84,6 +88,7 @@ app.post('/api/sync', async (req: Request, res: Response) => {
       create: { id: 'production', data: body }
     });
 
+    console.log("✓ Data saved to database successfully");
     return res.status(200).json({ success: true });
   } catch (error: any) {
     console.error("Prisma Fatal Error:", error);

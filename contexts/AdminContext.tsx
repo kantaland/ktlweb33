@@ -153,8 +153,9 @@ const STATE_KEY = 'kantalnad_site_data_v7';
 
 // Determine API URL based on environment
 const getApiUrl = () => {
-    // Always use relative path - backend serves both API and frontend
-    return '/api/sync';
+    // Use relative path - works in both dev (via Vite proxy) and production (Vercel)
+    const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+    return `${baseUrl}/api/sync`;
 };
 
 // LOCAL INDEXED DB HELPERS (FALLBACK)
@@ -298,13 +299,15 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
                   'Content-Type': 'application/json',
                   'Authorization': 'Bearer KANTA0910'
               },
-              body: payload
+              body: payload,
+              cache: 'no-store'
           });
           
           if (!res.ok) {
-              console.warn(`Auto-sync failed with status ${res.status}`);
+              const errText = await res.text().catch(() => '');
+              console.warn(`Auto-sync failed with status ${res.status}: ${errText}`);
           } else {
-              console.log("Auto-sync completed");
+              console.log("✓ Auto-sync completed to database");
           }
       } catch (e) {
           console.warn("Auto-sync network error:", e);
