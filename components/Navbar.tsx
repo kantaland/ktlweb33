@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { Tab } from '../types';
-import { Menu, Search, User, X } from 'lucide-react';
+import { Menu, Search, User, X, Database } from 'lucide-react';
 import { useAdmin } from '../contexts/AdminContext';
 
 interface NavbarProps {
@@ -12,7 +11,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ currentTab, onTabChange }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { isAuthenticated, logout } = useAdmin();
+  const { isAuthenticated, logout, isSyncing } = useAdmin();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,6 +83,12 @@ const Navbar: React.FC<NavbarProps> = ({ currentTab, onTabChange }) => {
              <button onClick={() => onTabChange(Tab.CONTACT)} className="hidden md:flex items-center gap-2 text-[10px] font-bold tracking-brand uppercase group">
                 <span className="group-hover:opacity-60 transition-opacity">Contact</span>
              </button>
+             
+             {isSyncing && (
+                 <div className="hidden md:flex items-center gap-2 text-[9px] font-bold uppercase tracking-brand animate-pulse text-emerald-500">
+                     <Database size={12} /> Syncing
+                 </div>
+             )}
              
              {isAuthenticated && (
                  <button onClick={logout} className="text-[10px] font-bold uppercase tracking-brand text-red-500">

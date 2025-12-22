@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { ChevronRight, Zap } from 'lucide-react';
 import { Tab } from '../types';
@@ -67,12 +66,12 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                         </div>
                     </div>
 
-                    <div className="mb-8 relative">
+                    <div className="mb-8 relative group/title cursor-default">
                         <EditableText 
                             tag="h1"
                             value={siteData.hero.title}
                             onSave={(val) => { updateSiteData('hero', { title: val }); publish(); }}
-                            className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-medium text-white tracking-hero leading-[0.85] uppercase drop-shadow-2xl mix-blend-overlay"
+                            className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-medium text-white tracking-hero leading-[0.85] uppercase drop-shadow-2xl mix-blend-overlay transition-all duration-300 group-hover/title:text-white/90 group-hover/title:translate-x-1 group-hover/title:shadow-[2px_0_0_red,-2px_0_0_blue]"
                             multiline
                         />
                     </div>

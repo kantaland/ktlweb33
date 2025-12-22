@@ -61,7 +61,7 @@ const App: React.FC = () => {
         return <InvestorLogin onNavigate={setActiveTab} />;
       case Tab.CONTACT:
         return (
-          <div className="bg-white min-h-screen pt-48 pb-32 lab-grid">
+          <div className="bg-white min-h-screen pt-48 pb-32">
             <div className="max-w-[1800px] mx-auto px-6 md:px-16">
                <div className="border-t border-black pt-24">
                    <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-400 mb-20 block pl-6 border-l border-black">Establish Contact</span>
@@ -235,7 +235,7 @@ const App: React.FC = () => {
         <div className="animate-[fadeIn_0.8s_ease-out]">
             <div className="noise-overlay"></div>
             
-            <div className={`bg-white text-rover-text font-sans selection:bg-black selection:text-white min-h-screen flex flex-col`}>
+            <div className={`bg-white text-rover-text font-sans selection:bg-black selection:text-white min-h-screen flex flex-col lab-grid`}>
                 <Navbar currentTab={activeTab} onTabChange={setActiveTab} />
                 {isAuthenticated && <GlobalEditorMenu onNavigate={setActiveTab} />}
                 
