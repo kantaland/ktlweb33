@@ -70,7 +70,7 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A and Monheim Mic Channel Strip – Hollywood",
         outlet: "YouTube",
         date: "2023-08-19",
-        url: "https://www.youtube.com/results?search_query=KANTA+Monheim+Mic+Channel+Strip",
+        url: "https://www.youtube.com/watch?v=xUO2b2Zb5s8",
         snippet: "Japanese producer and artist K.A.N.T.A, alongside his label KANTALAND, showcases the Monheim Mic Channel Strip in Hollywood, blending cutting-edge audio technology with creative vision.",
         imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
     },
