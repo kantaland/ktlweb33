@@ -12,7 +12,8 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const prisma = new PrismaClient();
-const PORT = parseInt(process.env.PORT || '5000', 10);
+// In dev: use port 3001, in production: use 5000
+const PORT = parseInt(process.env.PORT || (process.env.NODE_ENV === 'production' ? '5000' : '3001'), 10);
 
 // Middleware
 app.use(cors());
