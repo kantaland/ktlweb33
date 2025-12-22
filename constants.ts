@@ -69,19 +69,6 @@ export const MOCK_PRESS: PressRelease[] = [
 
 export const MOCK_VIDEOS: Video[] = [
   {
-    id: 'm3-1',
-    title: 'K.A.N.T.A - UNIVERSAL LOVE (Official Video)',
-    description: 'The visual manifesto of KANTALAND. A journey through frequency and light.',
-    thumbnailUrl: 'https://img.youtube.com/vi/r-t8p5fWw0U/maxresdefault.jpg',
-    views: 'M3-ARC',
-    uploadedAt: '2024',
-    tags: ['Music', 'Visuals'],
-    mediaType: 'youtube',
-    linkUrl: 'https://www.youtube.com/watch?v=r-t8p5fWw0U',
-    showLink: true,
-    referenceId: 'KL-001'
-  },
-  {
     id: 'm3-2',
     title: 'LAND OF THE RISING SUN',
     description: 'Sonic exploration of heritage and future. Filmed on location in Tokyo.',
@@ -98,11 +85,11 @@ export const MOCK_VIDEOS: Video[] = [
     id: 'm3-3',
     title: 'K.A.N.T.A - LOVE (Live Session)',
     description: 'Raw, organic performance capturing the essence of the Urban Hippy Fantasy.',
-    thumbnailUrl: 'https://img.youtube.com/vi/abc12345/maxresdefault.jpg', // Placeholder, user can update
+    thumbnailUrl: 'https://img.youtube.com/vi/abc12345/maxresdefault.jpg',
     views: 'M3-ARC',
     uploadedAt: '2023',
     tags: ['Live', 'Performance'],
-    mediaType: 'image', // Placeholder until video linked
+    mediaType: 'image',
     linkUrl: 'https://www.youtube.com/@KANTALAND',
     showLink: true,
     referenceId: 'KL-003'
