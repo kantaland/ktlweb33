@@ -186,10 +186,8 @@ app.use((err: any, req: Request, res: Response) => {
 // Export for Vercel
 export default app;
 
-// For local development with tsx
-if (process.env.NODE_ENV !== 'production') {
-  const PORT = parseInt(process.env.PORT || '3001', 10);
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`✓ Server running on http://0.0.0.0:${PORT}`);
-  });
-}
+// Always listen on the provided PORT or 5000 for Replit compatibility
+const PORT = parseInt(process.env.PORT || '5000', 10);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`✓ Server running on http://0.0.0.0:${PORT}`);
+});
