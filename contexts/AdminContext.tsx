@@ -152,10 +152,10 @@ const STATE_KEY = 'kantalnad_site_data_v7';
 
 // Determine API URL based on environment
 const getApiUrl = () => {
-    // Dynamically determine the API endpoint. 
-    // This allows it to work on localhost (if env vars set) or any deployed Vercel URL.
-    if (typeof window !== 'undefined') {
-        return '/api/sync';
+    // In development, connect to backend on port 3001
+    // In production, use relative path
+    if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+        return 'http://localhost:3001/api/sync';
     }
     return '/api/sync';
 };
