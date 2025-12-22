@@ -2,12 +2,17 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { PrismaClient } from '@prisma/client';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 const prisma = new PrismaClient();
-const PORT = 3001;
+const PORT = parseInt(process.env.PORT || '5000', 10);
 
 // Middleware
 app.use(cors());
@@ -88,7 +93,19 @@ app.post('/api/sync', async (req: Request, res: Response) => {
   }
 });
 
+// Serve built React frontend in production
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Handle SPA routing - serve index.html for all non-API routes
+app.use((req, res) => {
+  if (!req.path.startsWith('/api')) {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  } else {
+    res.status(404).json({ error: 'Not Found' });
+  }
+});
+
 // Start server
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Backend API running on http://0.0.0.0:${PORT}`);
+  console.log(`Server running on http://0.0.0.0:${PORT}`);
 });

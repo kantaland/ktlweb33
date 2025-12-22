@@ -152,11 +152,7 @@ const STATE_KEY = 'kantalnad_site_data_v7';
 
 // Determine API URL based on environment
 const getApiUrl = () => {
-    // In development, connect to backend on port 3001
-    // In production, use relative path
-    if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
-        return 'http://localhost:3001/api/sync';
-    }
+    // Always use relative path - backend serves both API and frontend
     return '/api/sync';
 };
 
