@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>KANTALAND | The Digital Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              rover: {
+                black: '#ffffff',
+                dark: '#f8f8f8',
+                border: '#e5e5e5',
+                text: '#0f0f0f',
+                muted: '#525252',
+                subtle: '#9ca3af',
+                accent: '#000000',
+                obsidian: '#000000',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+            },
+            letterSpacing: {
+              'tighter': '-0.05em',
+              'tight': '-0.025em',
+              'normal': '0',
+              'wide': '0.025em',
+              'wider': '0.05em',
+              'widest': '0.1em',
+              'brand': '0.15em',
+              'hero': '-0.01em',
+            },
+            fontSize: {
+              '2xs': '0.625rem',
+              '3xs': '0.5rem',
+            },
+            maxWidth: {
+              '8xl': '90rem',
+            },
+            transitionDuration: {
+              '400': '400ms',
+            },
+            transitionTimingFunction: {
+              'luxury': 'cubic-bezier(0.25, 1, 0.5, 1)',
+            },
+            animation: {
+                'scan': 'scan 4s linear infinite',
+                'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+                scan: {
+                    '0%': { transform: 'translateY(-100%)' },
+                    '100%': { transform: 'translateY(100%)' }
+                }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #0f0f0f;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      ::selection {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      .grid-bleed {
+        display: grid;
+        grid-template-columns: 1fr min(1400px, 92%) 1fr;
+      }
+      .grid-bleed > * { grid-column: 2; }
+      .grid-bleed > .full-bleed { grid-column: 1 / -1; width: 100%; }
+      .nav-link { position: relative; padding-bottom: 4px; }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+      .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      /* Lab Utilities */
+      .lab-grid {
+          background-image: 
+            linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+          background-size: 40px 40px;
+      }
+
+      .noise-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 9998;
+          opacity: 0.04;
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "jspdf": "https://esm.sh/jspdf@^3.0.4",
+    "@vercel/postgres": "https://esm.sh/@vercel/postgres@^0.10.0",
+    "@prisma/client": "https://esm.sh/@prisma/client@^7.2.0",
+    "@prisma/extension-accelerate": "https://esm.sh/@prisma/extension-accelerate@^3.0.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
