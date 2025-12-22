@@ -79,7 +79,7 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Polaroid Launches Its First-Ever Music Player!",
         outlet: "ASCII",
         date: "2022-11-17",
-        url: "https://ascii.jp",
+        url: "https://ascii.jp/elem/000/004/113/4113656/",
         snippet: "At the venue, an offline music sales pop-up called \"Beat Leasing\" will also take place. The first release features an unreleased track by producer DJ DARUMA and K.A.N.T.A.",
         imageUrl: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=1000&auto=format&fit=crop"
     },
