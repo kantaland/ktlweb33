@@ -102,16 +102,53 @@ const PressSection: React.FC<PressSectionProps> = ({ limit, onViewAll }) => {
         }
     };
 
-    const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (file) {
+    const compressArticleImage = async (file: File): Promise<string | null> => {
+        return new Promise((resolve) => {
+            // Check file size - warn if over 200KB
+            if (file.size > 200 * 1024) {
+                alert(`⚠️ IMAGE SIZE WARNING\n\nImage (${(file.size / 1024).toFixed(0)}KB) is quite large. For syncing reliability, please use an image under 150KB or paste an external image URL instead.`);
+            }
+            
             const reader = new FileReader();
-            reader.onloadend = () => {
-                if (typeof reader.result === 'string') {
-                    setFormData(prev => ({ ...prev, imageUrl: reader.result as string }));
-                }
+            reader.onload = (event) => {
+                const img = new Image();
+                img.src = event.target?.result as string;
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    if (!ctx) { resolve(img.src); return; }
+                    
+                    // ULTRA AGGRESSIVE for articles: Max 500px width
+                    const maxWidth = 500;
+                    let width = img.width;
+                    let height = img.height;
+                    if (width > maxWidth) {
+                        height = Math.round((height * maxWidth) / width);
+                        width = maxWidth;
+                    }
+                    canvas.width = width;
+                    canvas.height = height;
+                    ctx.drawImage(img, 0, 0, width, height);
+                    // Ultra-low quality for articles: 0.4 (Maximum compression)
+                    resolve(canvas.toDataURL('image/jpeg', 0.4));
+                };
+                img.onerror = () => resolve(null);
             };
             reader.readAsDataURL(file);
+        });
+    };
+
+    const handleFileChange = async (e: ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            if (!file.type.startsWith('image/')) {
+                alert("Please upload an image file.");
+                return;
+            }
+            const compressed = await compressArticleImage(file);
+            if (compressed) {
+                setFormData(prev => ({ ...prev, imageUrl: compressed }));
+            }
         }
     };
 
