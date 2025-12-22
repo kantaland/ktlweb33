@@ -72,7 +72,7 @@ export const MOCK_PRESS: PressRelease[] = [
         date: "2023-08-19",
         url: "https://www.youtube.com/watch?v=xUO2b2Zb5s8",
         snippet: "Japanese producer and artist K.A.N.T.A, alongside his label KANTALAND, showcases the Monheim Mic Channel Strip in Hollywood, blending cutting-edge audio technology with creative vision.",
-        imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "attached_assets/Screenshot_from_2025-12-20_17-15-43_1766389769331.png"
     },
     {
         id: 'p5',
@@ -81,16 +81,16 @@ export const MOCK_PRESS: PressRelease[] = [
         date: "2022-11-17",
         url: "https://ascii.jp/elem/000/004/113/4113656/",
         snippet: "At the venue, an offline music sales pop-up called \"Beat Leasing\" will also take place. The first release features an unreleased track by producer DJ DARUMA and K.A.N.T.A.",
-        imageUrl: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "attached_assets/d79708-9-08892a70c79b71355549-17_1766389830361.png"
     },
     {
         id: 'p6',
         title: "K.A.N.T.A: Urban Musician and Producer Spotlight",
         outlet: "Elektronauts",
         date: "2022-05-11",
-        url: "https://elektronauts.com",
+        url: "https://www.elektronauts.com/talk/112",
         snippet: "K.A.N.T.A is an urban musician and producer based in Tokyo. He releases albums, has a radio show on Rakuten FM and runs the Kantaland store in Shibuya, bringing the Elektron sound to life.",
-        imageUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "attached_assets/9990ba28d511e90ee107d4654334e3205856a604_1766389884258.png"
     }
 ];
 
