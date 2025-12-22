@@ -153,9 +153,14 @@ const STATE_KEY = 'kantalnad_site_data_v7';
 
 // Determine API URL based on environment
 const getApiUrl = () => {
-    // Use relative path - works in both dev (via Vite proxy) and production (Vercel)
-    const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
-    return `${baseUrl}/api/sync`;
+    // In browser context, use relative path
+    // This works in both dev (via Vite proxy) and production (Vercel)
+    if (typeof window !== 'undefined') {
+        // Always use relative path - Vercel handles routing
+        return '/api/sync';
+    }
+    // Server-side fallback
+    return 'http://localhost:3001/api/sync';
 };
 
 // LOCAL INDEXED DB HELPERS (FALLBACK)
