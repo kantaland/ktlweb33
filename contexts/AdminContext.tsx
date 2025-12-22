@@ -258,6 +258,19 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   const persist = async (newState: GlobalState) => {
       // 1. Always save locally immediately for speed
       await dbSave(newState);
+      // 2. Auto-sync to cloud on every change (no need to click Publish)
+      setTimeout(() => {
+          const payload = JSON.stringify(newState);
+          const apiUrl = getApiUrl();
+          fetch(apiUrl, {
+              method: 'POST',
+              headers: { 
+                  'Content-Type': 'application/json',
+                  'Authorization': 'Bearer KANTA0910'
+              },
+              body: payload
+          }).catch(e => console.warn("Auto-sync failed:", e));
+      }, 500); // Small delay to batch rapid changes
   };
 
   const publish = async (retryCount = 0) => {
