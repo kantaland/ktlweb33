@@ -222,13 +222,23 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
                   if (cloudData && cloudData.siteData) {
                       console.log("✓ Loaded FRESH data from Database");
                       setState(cloudData);
-                      await dbSave(cloudData); // Update local cache with fresh cloud data
+                      await dbSave(cloudData);
                       cloudDataLoaded = true;
                       setIsSyncing(false);
-                      return; // STOP HERE if cloud sync worked
+                      return;
                   } else if (cloudData.empty) {
-                      console.log("Database is empty, using defaults");
-                      cloudDataLoaded = true; // Mark as attempted even if empty
+                      console.log("Database empty - seeding with defaults");
+                      cloudDataLoaded = true;
+                      // Auto-sync defaults to database when empty
+                      const payload = JSON.stringify(INITIAL_STATE);
+                      fetch(apiUrl, {
+                          method: 'POST',
+                          headers: { 
+                              'Content-Type': 'application/json',
+                              'Authorization': 'Bearer KANTA0910'
+                          },
+                          body: payload
+                      }).catch(e => console.warn("Default seed failed:", e));
                   }
               }
           } catch (e) {
@@ -239,7 +249,7 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
           if (!cloudDataLoaded) {
               const localData = await dbLoad();
               if (localData && localData.siteData) {
-                   console.log("✓ Loaded from Local Cache (Offline Mode)");
+                   console.log("✓ Loaded from Local Cache");
                    setState(localData);
                    setIsSyncing(false);
                    return;

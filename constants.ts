@@ -45,7 +45,7 @@ export const MOCK_PRESS: PressRelease[] = [
         date: "2023-08-19",
         url: "https://www.youtube.com/watch?v=xUO2b2Zb5s8",
         snippet: "Japanese producer and artist K.A.N.T.A, alongside his label KANTALAND, showcases the Monheim Mic Channel Strip in Hollywood, blending cutting-edge audio technology with creative vision.",
-        imageUrl: "attached_assets/Screenshot_from_2025-12-20_17-15-43_1766389769331.png"
+        imageUrl: "https://img.youtube.com/vi/xUO2b2Zb5s8/maxresdefault.jpg"
     },
     {
         id: 'p5',
@@ -54,7 +54,7 @@ export const MOCK_PRESS: PressRelease[] = [
         date: "2022-11-17",
         url: "https://ascii.jp/elem/000/004/113/4113656/",
         snippet: "At the venue, an offline music sales pop-up called \"Beat Leasing\" will also take place. The first release features an unreleased track by producer DJ DARUMA and K.A.N.T.A.",
-        imageUrl: "attached_assets/d79708-9-08892a70c79b71355549-17_1766389830361.png"
+        imageUrl: "https://via.placeholder.com/600x400/000000/ffffff?text=Polaroid+Music+Player"
     },
     {
         id: 'p6',
@@ -63,7 +63,7 @@ export const MOCK_PRESS: PressRelease[] = [
         date: "2022-05-11",
         url: "https://www.elektronauts.com/talk/112",
         snippet: "K.A.N.T.A is an urban musician and producer based in Tokyo. He releases albums, has a radio show on Rakuten FM and runs the Kantaland store in Shibuya, bringing the Elektron sound to life.",
-        imageUrl: "attached_assets/9990ba28d511e90ee107d4654334e3205856a604_1766389884258.png"
+        imageUrl: "https://via.placeholder.com/600x400/1a1a1a/ffffff?text=K.A.N.T.A+Producer"
     }
 ];
 
