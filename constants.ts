@@ -205,9 +205,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "One-of-a-Kind Works Created Just for You — Art Exhibition by URBAN HIPPY FANTASY",
         outlet: "NEOL",
         date: "2016-07-08",
-        url: "https://neol.jp",
+        url: "https://www.neol.jp/culture/43876/",
         snippet: "ONE & ONLY: truly one-of-a-kind pieces made for one person in the world—you. Artworks by URBAN HIPPY FANTASY will be exhibited from June 17 to July 1 at REEBOK CLASSIC STORE HARAJUKU.",
-        imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/urban-hippy-art-exhibition.jpg"
     },
     {
         id: 'p20',
