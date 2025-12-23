@@ -340,9 +340,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A featuring Leo Imai - Love Child",
         outlet: "HYPEBEAST",
         date: "2011-08-10",
-        url: "https://hypebeast.com",
+        url: "https://hypebeast.com/2011/8/k-a-n-t-a-featuring-leo-imai-love-child",
         snippet: "Being offered today is some fresh live hip-hop talent from Tokyo that goes by the name of K.A.N.T.A. As a son of well-known producer/DJ K.U.D.O (Major Force/Mo'Wax), he was early exposed to quality sound.",
-        imageUrl: "https://images.unsplash.com/photo-1556821840-a68975b8c25f?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kanta-love-child.jpg"
     },
     {
         id: 'p35',
