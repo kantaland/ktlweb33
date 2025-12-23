@@ -427,12 +427,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2017',
     date: '2017-01-15',
-    tags: ['Media', 'Fashion', 'Event'],
+    tags: ['Fashion', 'Event'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/mHWhLzp6e_E',
     showLink: true,
     referenceId: 'ITALY-2017',
-    domain: 'Media'
+    domain: 'Fashion'
   },
   {
     id: 'TOKYO-2017',
@@ -442,12 +442,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2017',
     date: '2017-06-01',
-    tags: ['Media', 'Commission'],
+    tags: ['Music', 'Commission'],
     mediaType: 'youtube',
     linkUrl: 'https://www.youtube.com/watch?v=J4WYD0go15I&t=3s',
     showLink: true,
     referenceId: 'TOKYO-2017',
-    domain: 'Media'
+    domain: 'Music'
   },
   {
     id: 'TOKYO-2016-EMODA',
