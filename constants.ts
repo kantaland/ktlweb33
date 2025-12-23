@@ -658,6 +658,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2014',
     domain: 'Fashion'
+  },
+  {
+    id: 'WALKINGBYMYSIDE-TOBEUS',
+    title: 'WALKING BY MY SIDE',
+    description: 'Song writing composition, sponsored by TOBE.US',
+    thumbnailUrl: 'https://img.youtube.com/vi/qrrhRg-uks8/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2014',
+    date: '2014-01-01',
+    tags: ['Music', 'Composition'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/qrrhRg-uks8',
+    showLink: true,
+    referenceId: 'TOKYO-2014',
+    domain: 'Music'
   }
 ];
 
