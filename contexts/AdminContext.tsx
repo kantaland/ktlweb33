@@ -105,7 +105,7 @@ const INITIAL_STATE: GlobalState = {
       siteData: {
           hero: {
               // Pointing to local file which will be uploaded on deployment
-              image: "/hero.mp4", 
+              image: "/videos/hero-background.mp4", 
               title: "KANTALAND HOLLYWOOD",
               sub: "INCUBATOR — THE LIGHT CAPITAL"
           },

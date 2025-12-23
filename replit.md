@@ -9,6 +9,7 @@ A React + TypeScript web application built with Vite, featuring a digital collec
 - `/services` - Service modules (geminiService for AI integration)
 - `/api` - API setup and sync scripts
 - `/prisma` - Prisma database schema
+- `/public/videos` - Video assets (hero-background.mp4)
 
 ## Tech Stack
 - **Frontend**: React 19, TypeScript, Vite
@@ -26,3 +27,5 @@ A React + TypeScript web application built with Vite, featuring a digital collec
 
 ## Recent Changes
 - Configured for Replit environment (port 5000, allowed hosts)
+- Added video background (hero-background.mp4) to header
+- Deployment configured as static site with build step
