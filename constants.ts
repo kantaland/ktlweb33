@@ -382,12 +382,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2019',
     date: '2019-09-01',
-    tags: ['Music', 'Automotive', 'Commercial'],
+    tags: ['Media', 'Automotive', 'Commercial'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/J1B3Tb7ofkk',
     showLink: true,
     referenceId: 'TOKYO-2019',
-    domain: 'Music'
+    domain: 'Media'
   },
   {
     id: 'LOSANGELES-COCACOLA-2018',
@@ -397,12 +397,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2018',
     date: '2018-06-15',
-    tags: ['Music', 'Beverage', 'Commercial'],
+    tags: ['Media', 'Beverage', 'Commercial'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/0ZRw25Ru50A',
     showLink: true,
     referenceId: 'LOS ANGELS-2018',
-    domain: 'Music'
+    domain: 'Media'
   },
   {
     id: 'TOKYO-NEWBALANCE-996',
@@ -412,12 +412,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2018',
     date: '2018-12-01',
-    tags: ['Music', 'Commercial', 'Brand'],
+    tags: ['Media', 'Commercial', 'Brand'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/yl0DllPWFhU',
     showLink: true,
     referenceId: 'TOKYO-2018',
-    domain: 'Music'
+    domain: 'Media'
   },
   {
     id: 'ITALY-GOLDENGOOSE-2017',
@@ -427,12 +427,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2017',
     date: '2017-01-15',
-    tags: ['Music', 'Fashion', 'Event'],
+    tags: ['Media', 'Fashion', 'Event'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/mHWhLzp6e_E',
     showLink: true,
     referenceId: 'ITALY-2017',
-    domain: 'Music'
+    domain: 'Media'
   },
   {
     id: 'TOKYO-2017',
@@ -442,12 +442,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2017',
     date: '2017-06-01',
-    tags: ['Music', 'Commission'],
+    tags: ['Media', 'Commission'],
     mediaType: 'youtube',
     linkUrl: 'https://www.youtube.com/watch?v=J4WYD0go15I&t=3s',
     showLink: true,
     referenceId: 'TOKYO-2017',
-    domain: 'Music'
+    domain: 'Media'
   },
   {
     id: 'TOKYO-2016-EMODA',
@@ -457,12 +457,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2016',
     date: '2016-03-15',
-    tags: ['Music', 'Fashion', 'Commission'],
+    tags: ['Media', 'Fashion', 'Commission'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/GLYc8ZttdLw',
     showLink: true,
     referenceId: 'TOKYO-2016',
-    domain: 'Music'
+    domain: 'Media'
   },
   {
     id: 'TOKYO-JEEP-2014',
@@ -472,12 +472,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2014',
     date: '2014-01-15',
-    tags: ['Music', 'Automotive', 'Commercial'],
+    tags: ['Media', 'Automotive', 'Commercial'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/PmtOfOxR3CU',
     showLink: true,
     referenceId: 'TOKYO-2014',
-    domain: 'Music'
+    domain: 'Media'
   },
   {
     id: 'TOKYO-2014-INT',
