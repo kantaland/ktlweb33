@@ -31,7 +31,7 @@ export const KANTA_BIO = {
     "REEBOK"
   ],
   legacy: [
-    "Japan Fashion Week // Sonic Direction",
+    "Pitti Uomo Opening ceremony sonic music direction",
     "Urban Hippy Fantasy // Founder",
     "KANTALAND // Chief Architect"
   ]
