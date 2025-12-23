@@ -375,6 +375,21 @@ export const MOCK_PRESS: PressRelease[] = [
 
 export const MOCK_VIDEOS: Video[] = [
   {
+    id: 'TOKYO-AUDI-A6',
+    title: 'AUDI JAPAN A6 TV CM',
+    description: 'Sonic song writing composition creative commission work for AUDI JAPAN',
+    thumbnailUrl: 'https://img.youtube.com/vi/J1B3Tb7ofkk/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2019',
+    date: '2019-09-01',
+    tags: ['Music', 'Automotive', 'Commercial'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/J1B3Tb7ofkk',
+    showLink: true,
+    referenceId: 'TOKYO-2019',
+    domain: 'Music'
+  },
+  {
     id: 'TOKYO-NEWBALANCE-996',
     title: '996 NEW BALANCE TV CM',
     description: 'Sonic song writing composition creative commission work for NEW BALANCE',
