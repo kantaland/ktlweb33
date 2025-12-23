@@ -115,9 +115,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Stars in New Zealand's Iconic Beer Brand STEINLAGER TV Commercial",
         outlet: "MASTERED",
         date: "2019-04-15",
-        url: "https://mastered.com",
+        url: "https://mastered.jp/news/kanta-steinlager-201904/",
         snippet: "In recent years, K.A.N.T.A has gained attention for his immersive art project GENZAI ART. Now, the Japanese rapper and producer has been featured in the television commercial for STEINLAGER.",
-        imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/steinlager-kanta-commercial.jpg"
     },
     {
         id: 'p10',
