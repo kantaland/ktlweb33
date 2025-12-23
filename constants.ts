@@ -349,9 +349,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A's long-awaited debut album was released on August 3!",
         outlet: "YAPPARI HIPHOP",
         date: "2011-08-01",
-        url: "https://yappari-hiphop.jp",
+        url: "https://www.yapparihiphop.com/music/k-a-n-t-a-royal-new-standard/",
         snippet: "The album has drawn high praise from UNKLE, Howie B, and Andrew Hale (producer for Sade), making it easy to see why major overseas labels are taking notice.",
-        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kanta-royal-new-standard.jpg"
     },
     {
         id: 'p36',
