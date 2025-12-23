@@ -375,31 +375,34 @@ export const MOCK_PRESS: PressRelease[] = [
 
 export const MOCK_VIDEOS: Video[] = [
   {
+    id: 'TOKYO-NEWBALANCE-996',
+    title: '996 NEW BALANCE TV CM',
+    description: 'Sonic song writing composition creative commission work for NEW BALANCE',
+    thumbnailUrl: 'https://img.youtube.com/vi/yl0DllPWFhU/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2018',
+    date: '2018-12-01',
+    tags: ['Music', 'Commercial', 'Brand'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/yl0DllPWFhU',
+    showLink: true,
+    referenceId: 'TOKYO-2018',
+    domain: 'Music'
+  },
+  {
     id: 'TOKYO-2017',
     title: 'SPECTRA',
     description: 'Sonic song writing composition creative commission work for Nextdrive Spectra',
     thumbnailUrl: 'https://img.youtube.com/vi/J4WYD0go15I/maxresdefault.jpg',
     views: 'M3-ARC',
     uploadedAt: '2017',
+    date: '2017-06-01',
     tags: ['Music', 'Commission'],
     mediaType: 'youtube',
     linkUrl: 'https://www.youtube.com/watch?v=J4WYD0go15I&t=3s',
     showLink: true,
-    referenceId: 'TOKYO-2017'
-  },
-  {
-    id: 'TOKYO-2014-INT',
-    title: 'K.A.N.T.A SHORT INTERVIEW IN TOKYO 2014',
-    description: 'Short interview documenting K.A.N.T.A in Tokyo during 2014, capturing early perspectives, creative direction, and cultural context.',
-    thumbnailUrl: 'https://img.youtube.com/vi/6TRd9oH943s/maxresdefault.jpg',
-    views: 'M3-ARC',
-    uploadedAt: '2014',
-    tags: ['Interview', 'Archive', 'Media'],
-    mediaType: 'youtube',
-    linkUrl: 'https://www.youtube.com/watch?v=6TRd9oH943s',
-    showLink: true,
-    referenceId: 'TOKYO-2014',
-    domain: 'MEDIA'
+    referenceId: 'TOKYO-2017',
+    domain: 'Music'
   },
   {
     id: 'TOKYO-2016-EMODA',
@@ -408,25 +411,28 @@ export const MOCK_VIDEOS: Video[] = [
     thumbnailUrl: 'https://img.youtube.com/vi/GLYc8ZttdLw/maxresdefault.jpg',
     views: 'M3-ARC',
     uploadedAt: '2016',
+    date: '2016-03-15',
     tags: ['Fashion', 'Music', 'Commission'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/GLYc8ZttdLw',
     showLink: true,
-    referenceId: 'TOKYO-2016'
+    referenceId: 'TOKYO-2016',
+    domain: 'Fashion'
   },
   {
-    id: 'TOKYO-NEWBALANCE-996',
-    title: '996 NEW BALANCE TV CM',
-    description: 'Sonic song writing composition creative commission work for NEW BALANCE',
-    thumbnailUrl: 'https://img.youtube.com/vi/yl0DllPWFhU/maxresdefault.jpg',
+    id: 'TOKYO-2014-INT',
+    title: 'K.A.N.T.A SHORT INTERVIEW IN TOKYO 2014',
+    description: 'Short interview documenting K.A.N.T.A in Tokyo during 2014, capturing early perspectives, creative direction, and cultural context.',
+    thumbnailUrl: 'https://img.youtube.com/vi/6TRd9oH943s/maxresdefault.jpg',
     views: 'M3-ARC',
-    uploadedAt: '2018',
-    tags: ['Commercial', 'Music', 'Brand'],
+    uploadedAt: '2014',
+    date: '2014-08-20',
+    tags: ['Media', 'Interview', 'Archive'],
     mediaType: 'youtube',
-    linkUrl: 'https://youtu.be/yl0DllPWFhU',
+    linkUrl: 'https://www.youtube.com/watch?v=6TRd9oH943s',
     showLink: true,
-    referenceId: 'TOKYO-2018',
-    domain: 'Music'
+    referenceId: 'TOKYO-2014',
+    domain: 'Media'
   }
 ];
 
