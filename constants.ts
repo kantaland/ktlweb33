@@ -70,9 +70,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A. is an urban musician and producer based in Tokyo",
         outlet: "ELEKTRONAUTS",
         date: "2022-05-11",
-        url: "https://elektronauts.com",
+        url: "https://www.elektronauts.com/talk/112",
         snippet: "He releases albums, has a radio show on Rakuten FM and runs the Kantaland store in Shibuya. The Elektron sound, in terms of a flower, a color, and a dish, changes all the time like a photograph where the grain and texture changes depending on the filter settings you use.",
-        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kanta-elektronauts.jpg"
     },
     {
         id: 'p5',
