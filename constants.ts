@@ -214,9 +214,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Spotlight on K.A.N.T.A's New Sneaker Art Piece Collection",
         outlet: "NEOL",
         date: "2016-03-29",
-        url: "https://neol.jp",
+        url: "https://www.neol.jp/culture/40122/",
         snippet: "K.A.N.T.A's project GENZAI ART merges music and physical objects through immersive, experiential art pieces and installations. Now, a new collection has been unveiled under the 1&0 PROJECT GENZAI ART EDITION.",
-        imageUrl: "https://images.unsplash.com/photo-1543163521-9efdc60b963d?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/genzai-art-sneaker-collection.jpg"
     },
     {
         id: 'p21',
