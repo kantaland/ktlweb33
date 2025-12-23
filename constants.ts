@@ -169,9 +169,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Five Senses + Fashion Sense = \"Sixth Sense\"",
         outlet: "NEOL",
         date: "2017-02-20",
-        url: "https://neol.jp",
+        url: "https://www.neol.jp/culture/53755/",
         snippet: "Tanaka Universal Co., Ltd. has announced the \"WHITE COLLECTION K.A.N.T.A Model\" ~WHITE COLLECTION GENZAI ART EDITION~, a new iteration of the German trainer White Collection, produced by K.A.N.T.A.",
-        imageUrl: "https://images.unsplash.com/photo-1556821840-a68975b8c25f?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/white-collection-article.jpg"
     },
     {
         id: 'p16',
