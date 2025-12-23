@@ -268,9 +268,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "DEXPISTOLS Set to Release New Mix CD \"LESSON.08 'TOKYO CULT'\" featuring",
         outlet: "NATALIE",
         date: "2014-03-25",
-        url: "https://natalie.mu",
+        url: "https://natalie.mu/music/news/112949",
         snippet: "DEXPISTOLS set to release their new mix CD \"LESSON.08 'TOKYO CULT'\" featuring production and contributions from K.A.N.T.A.",
-        imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/dexpistols-lesson08.avif"
     },
     {
         id: 'p27',
