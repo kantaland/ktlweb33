@@ -97,9 +97,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "VIKN Surprises Fans with Solo Release \"BOSS FLEX\"",
         outlet: "EYESCREAM",
         date: "2020-03-20",
-        url: "https://eyescream.jp",
+        url: "https://eyescream.jp/music/61538/",
         snippet: "The track is produced by K.A.N.T.A, showcasing a fresh side of VIKN's style and story while expanding his musical narrative.",
-        imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/ca6299d48ac5ebef3dabe7d02f1c9046c146ae30e3a8e1826d216760b95d1a_1766475014782.jpg"
     },
     {
         id: 'p8',
