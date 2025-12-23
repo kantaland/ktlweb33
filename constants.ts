@@ -142,9 +142,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "\"Lifestyle Itself Is Art.\" K.A.N.T.A and Ren Yokoi Speak at Length: Motivators Vol.10",
         outlet: "EYESCREAM",
         date: "2019-02-15",
-        url: "https://eyescream.jp",
+        url: "https://eyescream.jp/music/21899/",
         snippet: "K.A.N.T.A appears in Motivators, the monthly interview series by Ren Yokoi. A producer, rapper, and creator who places music at the core of his work, K.A.N.T.A is active across a wide range of fields.",
-        imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/motivators-vol10-article.jpg"
     },
     {
         id: 'p13',
