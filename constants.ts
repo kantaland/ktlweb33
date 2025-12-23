@@ -367,9 +367,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Presents \"ASCENSION\" Supported by STUSSY @ Le Baron de Paris",
         outlet: "HIDDEN-CHAMPION",
         date: "2010-10-19",
-        url: "https://hidden-champion.jp",
+        url: "http://hidden-champion.net/news/2010/10/20101022-fri-ascension-supported-by-stussy-le-baron-de-paris.html",
         snippet: "Concept: \"No border for good music.\" As music has become more accessible through MP3 players and digital technology, the meaning of going out to listen to music has gradually changed.",
-        imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/ascension-event.jpg"
     }
 ];
 
