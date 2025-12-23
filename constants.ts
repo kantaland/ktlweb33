@@ -232,9 +232,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A 1&0 PROJECT GENZAI ART EDITION – URBAN HIPPY SUPERSTAR x adidas Originals",
         outlet: "HYPEBEAST",
         date: "2015-09-15",
-        url: "https://hypebeast.com",
+        url: "https://hypebeast.com/jp/2015/9/adidas-originals-x-kanta-urban-hippy-superstar",
         snippet: "The highly anticipated second installment of the \"1&0 PROJECT\" by K.A.N.T.A has been released, continuing his innovative fusion of music, art, and fashion in collaboration with adidas Originals.",
-        imageUrl: "https://images.unsplash.com/photo-1502272773456-58ead602b552?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/adidas-kanta-urban-hippy.avif"
     },
     {
         id: 'p23',
