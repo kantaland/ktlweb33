@@ -178,9 +178,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Provides Opening Ceremony Music for Golden Goose Deluxe Brand at Pitti Uomo",
         outlet: "HYPEBEAST",
         date: "2017-01-11",
-        url: "https://hypebeast.com",
+        url: "https://hypebeast.com/2017/1/golden-goose-deluxe-brand-pitti-presentation",
         snippet: "Tokyo-based artist K.A.N.T.A set the tone for Golden Goose Deluxe Brand's first-ever fashion presentation at Pitti Uomo, bringing his signature mix of musical and artistic sensibilities to the opening ceremony.",
-        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/golden-goose-article.avif"
     },
     {
         id: 'p17',
