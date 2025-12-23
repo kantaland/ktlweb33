@@ -386,32 +386,6 @@ export const MOCK_VIDEOS: Video[] = [
     linkUrl: 'https://www.youtube.com/watch?v=J4WYD0go15I&t=3s',
     showLink: true,
     referenceId: 'TOKYO-2017'
-  },
-  {
-    id: 'm3-2',
-    title: 'LAND OF THE RISING SUN',
-    description: 'Sonic exploration of heritage and future. Filmed on location in Tokyo.',
-    thumbnailUrl: 'https://img.youtube.com/vi/8JNF-Lw_jDQ/maxresdefault.jpg',
-    views: 'M3-ARC',
-    uploadedAt: '2024',
-    tags: ['Music', 'Tokyo'],
-    mediaType: 'youtube',
-    linkUrl: 'https://www.youtube.com/watch?v=8JNF-Lw_jDQ',
-    showLink: true,
-    referenceId: 'KL-002'
-  },
-  {
-    id: 'm3-3',
-    title: 'K.A.N.T.A - LOVE (Live Session)',
-    description: 'Raw, organic performance capturing the essence of the Urban Hippy Fantasy.',
-    thumbnailUrl: 'https://img.youtube.com/vi/abc12345/maxresdefault.jpg', // Placeholder, user can update
-    views: 'M3-ARC',
-    uploadedAt: '2023',
-    tags: ['Live', 'Performance'],
-    mediaType: 'image', // Placeholder until video linked
-    linkUrl: 'https://www.youtube.com/@KANTALAND',
-    showLink: true,
-    referenceId: 'KL-003'
   }
 ];
 
