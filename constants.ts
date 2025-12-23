@@ -331,9 +331,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A. - OtherSideOfTheGlobe (Free EP)",
         outlet: "HYPEBEAST",
         date: "2011-12-19",
-        url: "https://hypebeast.com",
+        url: "https://hypebeast.com/2011/12/kanta-othersideoftheglobe-free-ep",
         snippet: "K.A.N.T.A. is a London-raised 24-year-old rapper/producer who is currently shaking up the Japanese music scene. Turning heads with a sound that can be best described as a melange of classic rock influences.",
-        imageUrl: "https://images.unsplash.com/photo-1502272773456-58ead602b552?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kanta-othersideoftheglobe.jpg"
     },
     {
         id: 'p34',
