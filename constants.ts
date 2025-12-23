@@ -277,9 +277,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Releases Music Video for \"WALKING BY MY SIDE\"",
         outlet: "HYPEBEAST",
         date: "2014-01-28",
-        url: "https://hypebeast.com",
+        url: "https://hypebeast.com/jp/2014/1/k-a-n-t-a-walking-by-my-side-music-video",
         snippet: "Bilingual rising artist K.A.N.T.A, son of K.U.D.O from the legendary label MAJOR FORCE, spent his early childhood in London. He has now released his first digital single of 2014, \"WALKING BY MY SIDE.\"",
-        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/walking-by-my-side-music-video.png"
     },
     {
         id: 'p28',
