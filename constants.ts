@@ -654,7 +654,7 @@ export const MOCK_VIDEOS: Video[] = [
     date: '2014-01-01',
     tags: ['Fashion', 'Show'],
     mediaType: 'youtube',
-    linkUrl: 'https://youtu.be/mThdWPzZI8c',
+    linkUrl: 'https://youtu.be/mThdWPzZI8c?si=mxh6ynLBlmjsZWHw',
     showLink: true,
     referenceId: 'TOKYO-2014',
     domain: 'Fashion'
@@ -663,7 +663,7 @@ export const MOCK_VIDEOS: Video[] = [
     id: 'WALKINGBYMYSIDE-TOBEUS',
     title: 'WALKING BY MY SIDE',
     description: 'Song writing composition, sponsored by TOBE.US',
-    thumbnailUrl: 'https://img.youtube.com/vi/qrrhRg-uks8/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/qrrhRg-uks8/sddefault.jpg',
     views: 'M3-ARC',
     uploadedAt: '2014',
     date: '2014-01-01',
