@@ -312,7 +312,7 @@ export const MOCK_PRESS: PressRelease[] = [
         id: 'p31',
         title: "EXOFEAR BLOOM's Secret EP Released in Limited Quantity via KANTALAND",
         outlet: "MASTERED",
-        date: "2013-08-24",
+        date: "2013-06-24",
         url: "https://mastered.jp/news/exoticlover-release/",
         snippet: "The highly anticipated new artist EXOFEAR BLOOM, recently signed to K.A.N.T.A's label KANTALAND, has unveiled their secret EP, \"EXOTIC LOVER.\" The limited-release EP is available today.",
         imageUrl: "/exofear-bloom-exotic-lover.jpg"
