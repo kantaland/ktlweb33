@@ -106,9 +106,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Broke City Gold Identity. Broke City Gold is a project by K.A.N.T.A.",
         outlet: "HOUYHNHNM",
         date: "2019-10-08",
-        url: "https://houyhnhnm.jp",
+        url: "https://www.houyhnhnm.jp/en/feature/84886/",
         snippet: "A musician, and Norio Sato, a designer for COTE MER, a brand participating in the Tokyo Collections. How did they meet and why did they start working together to create creative clothes that define the future?",
-        imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/broke-city-gold-article.webp"
     },
     {
         id: 'p9',
