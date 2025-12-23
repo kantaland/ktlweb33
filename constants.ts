@@ -508,6 +508,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2017',
     domain: 'Art'
+  },
+  {
+    id: 'TOKYO-BLOCKFM-2019',
+    title: 'BLOCK.FM K.A.N.T.A LIVE analog set',
+    description: 'Live performance for live radio BLOCK.FM',
+    thumbnailUrl: 'https://img.youtube.com/vi/FmvuG-LrLuI/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2019',
+    date: '2019-01-01',
+    tags: ['Music', 'Live', 'Performance'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/FmvuG-LrLuI',
+    showLink: true,
+    referenceId: 'TOYKO-2019',
+    domain: 'Music'
   }
 ];
 
