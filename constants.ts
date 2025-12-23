@@ -151,9 +151,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Exploring the Meaning of \"Handwriting\" with Montblanc – K.A.N.T.A Edition",
         outlet: "MASTERED",
         date: "2018-07-26",
-        url: "https://mastered.com",
+        url: "https://mastered.jp/feature/montblanc-tegaki/2/",
         snippet: "Exploring the Meaning of \"Handwriting\" with Montblanc – K.A.N.T.A Edition explores the intersection of personal expression and refined craftsmanship.",
-        imageUrl: "https://images.unsplash.com/photo-1458070900649-7d7d3d08e67d?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/montblanc-handwriting-article.jpg"
     },
     {
         id: 'p14',
