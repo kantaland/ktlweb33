@@ -13,6 +13,7 @@ export interface Video {
   linkUrl?: string;
   showLink?: boolean; // Toggle for "Source Reference" button visibility
   gallery?: string[]; // Multiple media support
+  domain?: string; // Content domain (Music, Media, etc.)
 }
 
 export interface Song {

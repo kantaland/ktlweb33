@@ -398,7 +398,8 @@ export const MOCK_VIDEOS: Video[] = [
     mediaType: 'youtube',
     linkUrl: 'https://www.youtube.com/watch?v=6TRd9oH943s',
     showLink: true,
-    referenceId: 'TOKYO-2014'
+    referenceId: 'TOKYO-2014',
+    domain: 'MEDIA'
   },
   {
     id: 'TOKYO-2016-EMODA',
@@ -424,7 +425,8 @@ export const MOCK_VIDEOS: Video[] = [
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/yl0DllPWFhU',
     showLink: true,
-    referenceId: 'TOKYO-2018'
+    referenceId: 'TOKYO-2018',
+    domain: 'Music'
   }
 ];
 
