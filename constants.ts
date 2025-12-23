@@ -223,9 +223,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Announces Third Installment of Art Project 'GENZAI ART'",
         outlet: "NEOL",
         date: "2015-12-06",
-        url: "https://neol.jp",
+        url: "https://www.neol.jp/culture/35085/",
         snippet: "K.A.N.T.A, the producer, rapper, and creator, launched GENZAI ART, an art project that produces immersive, experiential art pieces and installations combining music and physical objects.",
-        imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/genzai-art-third-installment.jpg"
     },
     {
         id: 'p22',
