@@ -390,6 +390,21 @@ export const MOCK_VIDEOS: Video[] = [
     domain: 'Music'
   },
   {
+    id: 'LOSANGELES-COCACOLA-2018',
+    title: '【COCA COLA】「COCA COLA PLUS」TVCM 30SEC',
+    description: 'Sonic song writing composition creative commission work for COCA COLA JAPAN',
+    thumbnailUrl: 'https://img.youtube.com/vi/0ZRw25Ru50A/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2018',
+    date: '2018-06-15',
+    tags: ['Music', 'Beverage', 'Commercial'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/0ZRw25Ru50A',
+    showLink: true,
+    referenceId: 'LOS ANGELS-2018',
+    domain: 'Music'
+  },
+  {
     id: 'TOKYO-NEWBALANCE-996',
     title: '996 NEW BALANCE TV CM',
     description: 'Sonic song writing composition creative commission work for NEW BALANCE',
