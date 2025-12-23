@@ -286,9 +286,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Releases Global Answer Anthem \"ALL OVER ME\"",
         outlet: "MASTERED",
         date: "2013-12-23",
-        url: "https://mastered.com",
+        url: "https://mastered.jp/news/kanta-alloverme/",
         snippet: "Following the successful debut of K.A.N.T.A.N.O.V.A's first official release, K.A.N.T.A returns with a new single, \"ALL OVER ME.\" The track has been remastered and is now officially available.",
-        imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/all-over-me-single.jpg"
     },
     {
         id: 'p29',
