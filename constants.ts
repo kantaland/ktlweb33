@@ -241,9 +241,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Launches New Project: URBAN HIPPY DOCUMENTARY",
         outlet: "NEOL",
         date: "2015-03-25",
-        url: "https://neol.jp",
+        url: "https://www.neol.jp/culture/24440/",
         snippet: "Under the theme \"LIFE IS ART,\" K.A.N.T.A has launched URBAN HIPPY DOCUMENTARY, a new project dedicated to discovering and introducing LIFE STYLE ARTISTS from Japan and abroad.",
-        imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/urban-hippy-documentary.png"
     },
     {
         id: 'p24',
