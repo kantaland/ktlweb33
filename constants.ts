@@ -391,7 +391,7 @@ export const MOCK_VIDEOS: Video[] = [
   },
   {
     id: 'LOSANGELES-COCACOLA-2018',
-    title: '【COCA COLA】「COCA COLA PLUS」TVCM 30SEC',
+    title: 'COCA COLA PLUS TV CM 30SEC',
     description: 'Sonic song writing composition creative commission work for COCA COLA JAPAN',
     thumbnailUrl: 'https://img.youtube.com/vi/0ZRw25Ru50A/maxresdefault.jpg',
     views: 'M3-ARC',
