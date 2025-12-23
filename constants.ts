@@ -304,9 +304,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "SOPHNET. 2013 Fall/Winter Collection Revealed – Featuring Music by K.A.N.T.A",
         outlet: "MASTERED",
         date: "2013-07-26",
-        url: "https://mastered.com",
+        url: "https://mastered.jp/news/sophnet-2013aw-collection/",
         snippet: "SOPHNET.'s 2013 Fall/Winter collection has been unveiled, continuing the brand's ongoing theme of \"AUTHENTIC.\" The accompanying promotional movie features music by K.A.N.T.A.",
-        imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/sophnet-2013aw-collection.jpg"
     },
     {
         id: 'p31',
