@@ -41,28 +41,28 @@ export const MOCK_PRESS: PressRelease[] = [
     {
         id: 'p1',
         title: "K.A.N.T.A and Monheim Mic Channel Strip – Hollywood",
-        outlet: "ASCII",
+        outlet: "YOUTUBE",
         date: "2023-08-17",
-        url: "https://ascii.jp",
+        url: "https://youtube.com",
         snippet: "Japanese producer and artist K.A.N.T.A, alongside his label KANTALAND, showcases the Monheim Mic Channel Strip in Hollywood, blending cutting-edge audio technology with creative innovation.",
         imageUrl: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p2',
         title: "Polaroid Launches Its First-Ever Music Player!",
-        outlet: "PRESS & NEWS",
+        outlet: "ASCII",
         date: "2022-11-17",
-        url: "https://polaroid.com",
+        url: "https://ascii.jp",
         snippet: "At the venue, an offline music sales pop-up called \"Beat Leasing\" takes place. The first release features an unreleased track by producer DJ DARUMA and K.A.N.T.A.",
         imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p3',
-        title: "K.A.N.T.A: From Tokyo Underground to Shodoshima's Sonic Vision",
+        title: "newspaper article features K.A.N.T.A, a music artist who relocated from the high-pressure music scene of Tokyo to the tranquil island of Shodoshima",
         outlet: "NEWS OUTLET",
         date: "2021-09-02",
         url: "https://newsoutlet.jp",
-        snippet: "A newspaper article features K.A.N.T.A, a music artist who relocated from the high-pressure music scene of Tokyo to the tranquil island of Shodoshima. After returning to Japan at age 20, he made a unique career pivot to become a music producer, composing tracks for numerous TV commercials.",
+        snippet: "After returning to Japan at age 20, he made a unique career pivot to become a music producer. He has composed tracks for numerous TV commercials and worked at the forefront of the music industry.",
         imageUrl: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop"
     },
     {
@@ -71,21 +71,21 @@ export const MOCK_PRESS: PressRelease[] = [
         outlet: "ELEKTRONAUTS",
         date: "2022-05-11",
         url: "https://elektronauts.com",
-        snippet: "He releases albums, has a radio show on Rakuten FM and runs the Kantaland store in Shibuya. His sound, described like a flower, a color, and a dish, changes all the time depending on the filter settings.",
+        snippet: "He releases albums, has a radio show on Rakuten FM and runs the Kantaland store in Shibuya. The Elektron sound, in terms of a flower, a color, and a dish, changes all the time like a photograph where the grain and texture changes depending on the filter settings you use.",
         imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p5',
-        title: "K.A.N.T.A Signs Label Deal with Kobalt Music AWAL",
+        title: "K.A.N.T.A Signs Label Deal with Kobalt Music AWAL as Debut 10th Anniversary Approaches",
         outlet: "BARKS",
         date: "2020-07-20",
         url: "https://barks.jp",
-        snippet: "As K.A.N.T.A approaches the 10th anniversary of his debut in 2021, he has signed a label deal with AWAL, part of the UK major music publishing company Kobalt Music.",
+        snippet: "As K.A.N.T.A approaches the 10th anniversary of his debut in 2021, he has signed a label deal with AWAL, part of the UK major music publishing company Kobalt Music, and announced the launch of a new project.",
         imageUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p6',
-        title: "ANARCHY x KANTA team up for Reebok Classic \"MONKEY TALK\"",
+        title: "ANARCHY x KANTA team up for the first time with Reebok Classic to release music video for \"MONKEY TALK\"",
         outlet: "BILLBOARD-JAPAN",
         date: "2020-03-30",
         url: "https://billboard.jp",
@@ -103,47 +103,47 @@ export const MOCK_PRESS: PressRelease[] = [
     },
     {
         id: 'p8',
-        title: "Broke City Gold Identity: A K.A.N.T.A Project",
+        title: "Broke City Gold Identity. Broke City Gold is a project by K.A.N.T.A.",
         outlet: "HOUYHNHNM",
         date: "2019-10-08",
         url: "https://houyhnhnm.jp",
-        snippet: "Broke City Gold is a project by K.A.N.T.A and designer Norio Sato for COTE MER, participating in the Tokyo Collections, creating innovative creative clothes.",
+        snippet: "A musician, and Norio Sato, a designer for COTE MER, a brand participating in the Tokyo Collections. How did they meet and why did they start working together to create creative clothes that define the future?",
         imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p9',
-        title: "K.A.N.T.A Stars in STEINLAGER TV Commercial",
+        title: "K.A.N.T.A Stars in New Zealand's Iconic Beer Brand STEINLAGER TV Commercial",
         outlet: "MASTERED",
         date: "2019-04-15",
         url: "https://mastered.com",
-        snippet: "K.A.N.T.A has gained attention for his immersive art project GENZAI ART. Now, the Japanese rapper and producer has been featured in the television commercial for STEINLAGER.",
+        snippet: "In recent years, K.A.N.T.A has gained attention for his immersive art project GENZAI ART. Now, the Japanese rapper and producer has been featured in the television commercial for STEINLAGER.",
         imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p10',
-        title: "Reebok CLASSIC \"DMX FUSION\" x Broke City Gold",
+        title: "Reebok CLASSIC \"DMX FUSION\" Collaborates with Street Brand Broke City Gold!",
         outlet: "QETIC",
         date: "2019-04-01",
         url: "https://qetic.jp",
-        snippet: "To celebrate the release of Reebok CLASSIC's new model DMX FUSION, a special collaboration has been realized with Harajuku-based street brand Broke City Gold.",
+        snippet: "To celebrate the release of Reebok CLASSIC's new model, the DMX FUSION, a special collaboration has been realized with the buzz-worthy Harajuku-based street brand Broke City Gold.",
         imageUrl: "https://images.unsplash.com/photo-1543163521-9efdc60b963d?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p11',
-        title: "K.A.N.T.A Lectures at Stanford University",
+        title: "K.A.N.T.A. lectures full of inspiration were held at Stanford University. What's next in Japan?",
         outlet: "HOUYHNHNM",
         date: "2019-03-22",
         url: "https://houyhnhnm.jp",
-        snippet: "K.A.N.T.A.'s activities caught the attention of Stanford University. Recently, he was invited to give a lecture in person, held over a period of three days.",
+        snippet: "K.A.N.T.A.'s activities caught the attention of the most prestigious Stanford University. Recently, he was invited to give a lecture in person, which was held over a period of three days.",
         imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p12',
-        title: "\"Lifestyle Itself Is Art.\" K.A.N.T.A and Ren Yokoi Speak at Length",
+        title: "\"Lifestyle Itself Is Art.\" K.A.N.T.A and Ren Yokoi Speak at Length: Motivators Vol.10",
         outlet: "EYESCREAM",
         date: "2019-02-15",
         url: "https://eyescream.jp",
-        snippet: "K.A.N.T.A appears in Motivators, the monthly interview series by Ren Yokoi. A producer, rapper, and creator who places music at the core of his work.",
+        snippet: "K.A.N.T.A appears in Motivators, the monthly interview series by Ren Yokoi. A producer, rapper, and creator who places music at the core of his work, K.A.N.T.A is active across a wide range of fields.",
         imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1000&auto=format&fit=crop"
     },
     {
@@ -152,16 +152,16 @@ export const MOCK_PRESS: PressRelease[] = [
         outlet: "MASTERED",
         date: "2018-07-26",
         url: "https://mastered.com",
-        snippet: "Exploring the Meaning of \"Handwriting\" with Montblanc – K.A.N.T.A Edition showcases the intersection of personal expression and refined craftsmanship.",
+        snippet: "Exploring the Meaning of \"Handwriting\" with Montblanc – K.A.N.T.A Edition explores the intersection of personal expression and refined craftsmanship.",
         imageUrl: "https://images.unsplash.com/photo-1458070900649-7d7d3d08e67d?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p14',
-        title: "Release of \"MONKEY TALK\" via Reebok CLASSIC",
+        title: "Release of the track and music video \"MONKEY TALK\" through a triple collaboration with Reebok CLASSIC",
         outlet: "FLJ TOKYO",
         date: "2018-04-05",
         url: "https://fljtoyo.jp",
-        snippet: "Release of the track and music video \"MONKEY TALK\" through a triple collaboration with ANARCHY, K.A.N.T.A, and Reebok CLASSIC.",
+        snippet: "ANARCHY, the widely renowned rapper from the Mukōjima housing projects in Kyoto. And K.A.N.T.A, the music artist who made his album debut in 2011 with Royal New Standard.",
         imageUrl: "https://images.unsplash.com/photo-1511379938547-c1f69b13d835?q=80&w=1000&auto=format&fit=crop"
     },
     {
@@ -170,25 +170,25 @@ export const MOCK_PRESS: PressRelease[] = [
         outlet: "NEOL",
         date: "2017-02-20",
         url: "https://neol.jp",
-        snippet: "Tanaka Universal Co., Ltd. announces the \"WHITE COLLECTION K.A.N.T.A Model\" ~WHITE COLLECTION GENZAI ART EDITION~, a new iteration of the German trainer.",
+        snippet: "Tanaka Universal Co., Ltd. has announced the \"WHITE COLLECTION K.A.N.T.A Model\" ~WHITE COLLECTION GENZAI ART EDITION~, a new iteration of the German trainer White Collection, produced by K.A.N.T.A.",
         imageUrl: "https://images.unsplash.com/photo-1556821840-a68975b8c25f?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p16',
-        title: "K.A.N.T.A Provides Opening Ceremony Music for Pitti Uomo",
+        title: "K.A.N.T.A Provides Opening Ceremony Music for Golden Goose Deluxe Brand at Pitti Uomo",
         outlet: "HYPEBEAST",
         date: "2017-01-11",
         url: "https://hypebeast.com",
-        snippet: "Tokyo-based artist K.A.N.T.A set the tone for Golden Goose Deluxe Brand's first-ever fashion presentation at Pitti Uomo, bringing his signature mix of musical and artistic sensibilities.",
+        snippet: "Tokyo-based artist K.A.N.T.A set the tone for Golden Goose Deluxe Brand's first-ever fashion presentation at Pitti Uomo, bringing his signature mix of musical and artistic sensibilities to the opening ceremony.",
         imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p17',
-        title: "K.A.N.T.A Joins Legendary MAJOR FORCE Revival Party",
+        title: "K.A.N.T.A Joins Legendary MAJOR FORCE Revival Party in Tokyo",
         outlet: "HOUYHNHNM",
         date: "2016-11-04",
         url: "https://houyhnhnm.jp",
-        snippet: "K.A.N.T.A, the biological son of K.U.D.O. and SK8Sin13 (SKATETHING), showcases both his music and immersive art pieces from Tokyo to the world.",
+        snippet: "K.A.N.T.A, the biological son of K.U.D.O. and SK8Sin13 (SKATETHING), will be part of this historic gathering, showcasing both his music and immersive art pieces from Tokyo to the world.",
         imageUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop"
     },
     {
@@ -197,16 +197,16 @@ export const MOCK_PRESS: PressRelease[] = [
         outlet: "IBOUGHT",
         date: "2016-08-03",
         url: "https://ibought.jp",
-        snippet: "Rapper and creator K.A.N.T.A, who knows Tokyo inside out, shares his favorite shopping routes and personal \"rules\" for shopping.",
+        snippet: "Rapper and creator K.A.N.T.A, who knows Tokyo inside out, shares his favorite shopping routes in Nakameguro and Daikanyama, along with his personal \"rules\" for shopping.",
         imageUrl: "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p19',
-        title: "One-of-a-Kind Works by URBAN HIPPY FANTASY",
+        title: "One-of-a-Kind Works Created Just for You — Art Exhibition by URBAN HIPPY FANTASY",
         outlet: "NEOL",
         date: "2016-07-08",
         url: "https://neol.jp",
-        snippet: "ONE & ONLY: truly one-of-a-kind pieces made for one person in the world. Artworks by URBAN HIPPY FANTASY exhibited at REEBOK CLASSIC STORE HARAJUKU.",
+        snippet: "ONE & ONLY: truly one-of-a-kind pieces made for one person in the world—you. Artworks by URBAN HIPPY FANTASY will be exhibited from June 17 to July 1 at REEBOK CLASSIC STORE HARAJUKU.",
         imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
     },
     {
@@ -215,48 +215,48 @@ export const MOCK_PRESS: PressRelease[] = [
         outlet: "NEOL",
         date: "2016-03-29",
         url: "https://neol.jp",
-        snippet: "K.A.N.T.A's project GENZAI ART merges music and physical objects through immersive, experiential art pieces and installations. A new collection has been unveiled.",
+        snippet: "K.A.N.T.A's project GENZAI ART merges music and physical objects through immersive, experiential art pieces and installations. Now, a new collection has been unveiled under the 1&0 PROJECT GENZAI ART EDITION.",
         imageUrl: "https://images.unsplash.com/photo-1543163521-9efdc60b963d?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p21',
-        title: "K.A.N.T.A Announces Third Installment of GENZAI ART",
+        title: "K.A.N.T.A Announces Third Installment of Art Project 'GENZAI ART'",
         outlet: "NEOL",
         date: "2015-12-06",
         url: "https://neol.jp",
-        snippet: "K.A.N.T.A launches GENZAI ART, an art project that produces immersive, experiential art pieces and installations combining music and physical objects.",
+        snippet: "K.A.N.T.A, the producer, rapper, and creator, launched GENZAI ART, an art project that produces immersive, experiential art pieces and installations combining music and physical objects.",
         imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p22',
-        title: "K.A.N.T.A 1&0 PROJECT GENZAI ART x adidas Originals",
+        title: "K.A.N.T.A 1&0 PROJECT GENZAI ART EDITION – URBAN HIPPY SUPERSTAR x adidas Originals",
         outlet: "HYPEBEAST",
         date: "2015-09-15",
         url: "https://hypebeast.com",
-        snippet: "The highly anticipated second installment of the \"1&0 PROJECT\" by K.A.N.T.A continues his innovative fusion of music, art, and fashion with adidas Originals.",
+        snippet: "The highly anticipated second installment of the \"1&0 PROJECT\" by K.A.N.T.A has been released, continuing his innovative fusion of music, art, and fashion in collaboration with adidas Originals.",
         imageUrl: "https://images.unsplash.com/photo-1502272773456-58ead602b552?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p23',
-        title: "K.A.N.T.A Launches URBAN HIPPY DOCUMENTARY",
+        title: "K.A.N.T.A Launches New Project: URBAN HIPPY DOCUMENTARY",
         outlet: "NEOL",
         date: "2015-03-25",
         url: "https://neol.jp",
-        snippet: "Under the theme \"LIFE IS ART,\" K.A.N.T.A launches URBAN HIPPY DOCUMENTARY, dedicated to discovering and introducing LIFE STYLE ARTISTS from Japan and abroad.",
+        snippet: "Under the theme \"LIFE IS ART,\" K.A.N.T.A has launched URBAN HIPPY DOCUMENTARY, a new project dedicated to discovering and introducing LIFE STYLE ARTISTS from Japan and abroad.",
         imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p24',
-        title: "K.A.N.T.A Brings TALKING ABOUT THE ABSTRACTION's Summer Style",
+        title: "K.A.N.T.A Brings TALKING ABOUT THE ABSTRACTION's Summer Style to Life",
         outlet: "HYPEBEAST",
         date: "2014-07-02",
         url: "https://hypebeast.com",
-        snippet: "Rapper and producer K.A.N.T.A models TALKING ABOUT THE ABSTRACTION's summer collection, featuring a special look centered on a clutch bag.",
+        snippet: "For HYPEBEAST, rapper and producer K.A.N.T.A models TALKING ABOUT THE ABSTRACTION's summer collection, featuring a special look centered on a clutch bag printed with the first issue.",
         imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
     },
     {
         id: 'p25',
-        title: "K.A.N.T.A: \"Step off society's boat and dive into the world of sensation\"",
+        title: "K.A.N.T.A: \"Step off society's boat and dive into the world of sensation.\"",
         outlet: "MOUTAKUSANDA",
         date: "2014-05-24",
         url: "https://moutakusanda.jp",
@@ -265,11 +265,11 @@ export const MOCK_PRESS: PressRelease[] = [
     },
     {
         id: 'p26',
-        title: "DEXPISTOLS Set to Release \"LESSON.08 'TOKYO CULT'\"",
+        title: "DEXPISTOLS Set to Release New Mix CD \"LESSON.08 'TOKYO CULT'\" featuring",
         outlet: "NATALIE",
         date: "2014-03-25",
         url: "https://natalie.mu",
-        snippet: "DEXPISTOLS prepare to release their new mix CD \"LESSON.08 'TOKYO CULT'\" featuring production and contributions from K.A.N.T.A.",
+        snippet: "DEXPISTOLS set to release their new mix CD \"LESSON.08 'TOKYO CULT'\" featuring production and contributions from K.A.N.T.A.",
         imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
     }
 ];
