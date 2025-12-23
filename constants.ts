@@ -322,9 +322,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Dream Collaboration Between K.A.N.T.A and Cohenbeats Realized at \"Hennessy Artistry\"",
         outlet: "MASTERED",
         date: "2012-09-12",
-        url: "https://mastered.com",
+        url: "https://mastered.jp/news/kanta-cohenbeats/",
         snippet: "A long-awaited collaboration between K.A.N.T.A and Cohenbeats has come to life. The producer, rapper, and multi-talented creator K.A.N.T.A joins forces with Cohenbeats, a leading hip-hop producer.",
-        imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kanta-cohenbeats.jpg"
     },
     {
         id: 'p33',
