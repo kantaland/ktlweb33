@@ -399,6 +399,19 @@ export const MOCK_VIDEOS: Video[] = [
     linkUrl: 'https://www.youtube.com/watch?v=6TRd9oH943s',
     showLink: true,
     referenceId: 'TOKYO-2014'
+  },
+  {
+    id: 'TOKYO-2016-EMODA',
+    title: '水原希子が着こなすEMODA 2016SS最新カタログ',
+    description: 'Sonic song writing composition creative commission work for EMODA',
+    thumbnailUrl: 'https://img.youtube.com/vi/GLYc8ZttdLw/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2016',
+    tags: ['Fashion', 'Music', 'Commission'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/GLYc8ZttdLw',
+    showLink: true,
+    referenceId: 'TOKYO-2016'
   }
 ];
 
