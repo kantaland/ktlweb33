@@ -250,9 +250,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Brings TALKING ABOUT THE ABSTRACTION's Summer Style to Life",
         outlet: "HYPEBEAST",
         date: "2014-07-02",
-        url: "https://hypebeast.com",
+        url: "https://hypebeast.com/jp/2014/7/talking-about-the-abstraction-2014-spring-summer-editorial-by-shun-okada",
         snippet: "For HYPEBEAST, rapper and producer K.A.N.T.A models TALKING ABOUT THE ABSTRACTION's summer collection, featuring a special look centered on a clutch bag printed with the first issue.",
-        imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/talking-about-abstraction.avif"
     },
     {
         id: 'p25',
