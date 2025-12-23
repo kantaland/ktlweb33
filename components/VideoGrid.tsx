@@ -327,13 +327,13 @@ const VideoGrid: React.FC = () => {
         </div>
 
         {/* Filter Bar */}
-        <div className="sticky top-20 md:top-24 z-40 bg-white border-y border-black py-8 mb-20">
-            <div className="max-w-[1800px] mx-auto px-6 md:px-16 flex flex-wrap items-center justify-center gap-6 md:gap-12">
+        <div className="sticky top-20 md:top-24 z-40 bg-white/90 backdrop-blur-md border-y border-gray-100 py-6 mb-20">
+            <div className="max-w-[1800px] mx-auto px-6 md:px-16 flex flex-wrap items-center justify-center gap-8 md:gap-16">
                 {(['ALL', 'MUSIC', 'MEDIA', 'ART', 'FASHION'] as const).map(filter => (
                     <button 
                         key={filter}
                         onClick={() => setActiveFilter(filter)}
-                        className={`text-[10px] font-bold tracking-brand uppercase transition-all duration-300 px-4 py-2 ${activeFilter === filter ? 'text-white bg-black border-black border' : 'text-black bg-white border border-black/20 hover:border-black'}`}
+                        className={`text-[11px] font-bold tracking-brand uppercase transition-all pb-2 border-b-2 ${activeFilter === filter ? 'text-black border-black' : 'text-gray-300 border-transparent hover:text-black'}`}
                     >
                         {filter}
                     </button>
@@ -385,12 +385,7 @@ const VideoGrid: React.FC = () => {
                                          </div>
                                      )}
                                  </div>
-                                 <span className={`text-[9px] font-bold uppercase tracking-brand px-3 py-1.5 border ${
-                                   video.tags[0] === 'Music' ? 'bg-blue-50 text-blue-700 border-blue-300' :
-                                   video.tags[0] === 'Media' ? 'bg-purple-50 text-purple-700 border-purple-300' :
-                                   video.tags[0] === 'Fashion' ? 'bg-pink-50 text-pink-700 border-pink-300' :
-                                   'bg-gray-50 text-gray-700 border-gray-300'
-                                 }`}>{video.tags[0]}</span>
+                                 <span className="text-[9px] font-bold uppercase tracking-brand text-black border border-black/10 px-2 py-0.5">{video.tags[0]}</span>
                              </div>
                              <h4 onClick={() => setActiveArchiveItem(video)} className="text-2xl font-bold text-black uppercase tracking-tight mb-4 hover:text-gray-500 transition-colors">
                                  {video.title}
