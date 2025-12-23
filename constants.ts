@@ -196,9 +196,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Shopping Routes of Creator K.A.N.T.A in Nakameguro and Daikanyama",
         outlet: "IBOUGHT",
         date: "2016-08-03",
-        url: "https://ibought.jp",
+        url: "https://ibought.jp/fashion/4828",
         snippet: "Rapper and creator K.A.N.T.A, who knows Tokyo inside out, shares his favorite shopping routes in Nakameguro and Daikanyama, along with his personal \"rules\" for shopping.",
-        imageUrl: "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/shopping-routes-article.jpg"
     },
     {
         id: 'p19',
