@@ -127,7 +127,7 @@ const MusicSection: React.FC = () => {
             
             <div className="flex flex-col gap-8 md:gap-10 items-start lg:items-end">
                  <div className="flex flex-col gap-4 md:gap-6 w-full sm:w-auto">
-                     <a href="https://open.spotify.com/artist/1sb3bbYGpYX84TKUvdw2dO" target="_blank" className="flex items-center justify-between gap-12 border-b border-black pb-4 group transition-all">
+                     <a href="https://open.spotify.com/playlist/5XIXIf02SeKTiD6Scsxu77?si=Jykb8dUFT2S26T3v_geMag" target="_blank" className="flex items-center justify-between gap-12 border-b border-black pb-4 group transition-all">
                          <span className="text-xs font-bold tracking-brand uppercase text-black">Spotify Master</span>
                          <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform text-black"/>
                      </a>

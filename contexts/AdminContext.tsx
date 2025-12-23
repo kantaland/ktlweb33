@@ -122,7 +122,8 @@ const INITIAL_STATE: GlobalState = {
               description: "Powered by Tech Partners: AWAL / Sony music UK. Empowering artists with global reach.",
               creditsUrl: "https://credits.muso.ai/profile/d3a0d803-06ce-40e6-a7e0-80aeb0efb9b1",
               repositories: [
-                  { id: 'repo-1', label: 'Master Portfolio', url: 'https://open.spotify.com/artist/1sb3bbYGpYX84TKUvdw2dO' }
+                  { id: 'repo-1', label: 'Master Portfolio', url: 'https://open.spotify.com/playlist/5XIXIf02SeKTiD6Scsxu77?si=Jykb8dUFT2S26T3v_geMag' },
+                  { id: 'repo-2', label: 'Featured', url: 'https://open.spotify.com/playlist/7ip8aoBHAYD3ORf92o2Eps?si=WiYTGupxQM-h0coCuhpO3A' }
               ] 
           },
           placements: {
