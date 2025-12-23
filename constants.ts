@@ -375,17 +375,17 @@ export const MOCK_PRESS: PressRelease[] = [
 
 export const MOCK_VIDEOS: Video[] = [
   {
-    id: 'm3-1',
-    title: 'K.A.N.T.A - UNIVERSAL LOVE (Official Video)',
-    description: 'The visual manifesto of KANTALAND. A journey through frequency and light.',
+    id: 'TOKYO-2017',
+    title: 'SPECTRA',
+    description: 'Sonic song writing composition creative commission work for Nextdrive Spectra',
     thumbnailUrl: 'https://img.youtube.com/vi/J4WYD0go15I/maxresdefault.jpg',
     views: 'M3-ARC',
-    uploadedAt: '2024',
-    tags: ['Music', 'Visuals'],
+    uploadedAt: '2017',
+    tags: ['Music', 'Commission'],
     mediaType: 'youtube',
-    linkUrl: 'https://youtu.be/J4WYD0go15I?si=FXJnMVObzOGxcFW-',
+    linkUrl: 'https://www.youtube.com/watch?v=J4WYD0go15I&t=3s',
     showLink: true,
-    referenceId: 'KL-001'
+    referenceId: 'TOKYO-2017'
   },
   {
     id: 'm3-2',
