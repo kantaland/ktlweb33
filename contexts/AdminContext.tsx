@@ -114,7 +114,7 @@ const INITIAL_STATE: GlobalState = {
               mission: "To create a global ecosystem where creativity, strategic insight, and culture converge. We provide the tools, the guidance, and the capital — light, fast, and intentional."
           },
           architect: {
-              image: "/kanta.jpg", // Updated to point to the new image
+              image: "/architect-bio.png",
               bio: KANTA_BIO.desc,
               quote: "KANTALAND is the living blueprint of a global cultural architect."
           },
