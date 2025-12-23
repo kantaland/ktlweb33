@@ -450,6 +450,21 @@ export const MOCK_VIDEOS: Video[] = [
     domain: 'Music'
   },
   {
+    id: 'TOKYO-JEEP-2014',
+    title: 'ALL NEW JEEP® CHEROKEE – JAPAN TV CM',
+    description: 'Sonic song writing composition creative commission work for JEEP',
+    thumbnailUrl: 'https://img.youtube.com/vi/PmtOfOxR3CU/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2014',
+    date: '2014-01-15',
+    tags: ['Music', 'Automotive', 'Commercial'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/PmtOfOxR3CU',
+    showLink: true,
+    referenceId: 'TOKYO-2014',
+    domain: 'Music'
+  },
+  {
     id: 'TOKYO-2014-INT',
     title: 'K.A.N.T.A SHORT INTERVIEW IN TOKYO 2014',
     description: 'Short interview documenting K.A.N.T.A in Tokyo during 2014, capturing early perspectives, creative direction, and cultural context.',
