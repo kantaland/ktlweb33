@@ -61,9 +61,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "newspaper article features K.A.N.T.A, a music artist who relocated from the high-pressure music scene of Tokyo to the tranquil island of Shodoshima",
         outlet: "NEWS OUTLET",
         date: "2021-09-02",
-        url: "https://newsoutlet.jp",
+        url: "",
         snippet: "After returning to Japan at age 20, he made a unique career pivot to become a music producer. He has composed tracks for numerous TV commercials and worked at the forefront of the music industry.",
-        imageUrl: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "https://ik.imagekit.io/replit/image_1766474146612.jpg"
     },
     {
         id: 'p4',
