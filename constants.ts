@@ -532,12 +532,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2020',
     date: '2020-01-01',
-    tags: ['Music', 'Sports', 'Commercial'],
+    tags: ['Media', 'Sports', 'Commercial'],
     mediaType: 'youtube',
     linkUrl: 'https://youtu.be/uSMBQmqEvLI',
     showLink: true,
     referenceId: 'TOKYO-2020',
-    domain: 'Music'
+    domain: 'Media'
   }
 ];
 
