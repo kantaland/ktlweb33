@@ -124,9 +124,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Reebok CLASSIC \"DMX FUSION\" Collaborates with Street Brand Broke City Gold!",
         outlet: "QETIC",
         date: "2019-04-01",
-        url: "https://qetic.jp",
+        url: "https://qetic.jp/life-fashion/reebok-dmx-180401/282007/",
         snippet: "To celebrate the release of Reebok CLASSIC's new model, the DMX FUSION, a special collaboration has been realized with the buzz-worthy Harajuku-based street brand Broke City Gold.",
-        imageUrl: "https://images.unsplash.com/photo-1543163521-9efdc60b963d?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/reebok-dmx-fusion-article.jpg"
     },
     {
         id: 'p11',
