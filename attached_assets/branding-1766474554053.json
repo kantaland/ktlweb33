@@ -1,0 +1,135 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Poppins",
+      "count": 68
+    },
+    {
+      "family": "游ゴシック",
+      "count": 68
+    },
+    {
+      "family": "Yu Gothic",
+      "count": 68
+    },
+    {
+      "family": "YuGothic",
+      "count": 68
+    },
+    {
+      "family": "Hiragino Kaku Gothic ProN",
+      "count": 68
+    },
+    {
+      "family": "Hiragino Kaku Gothic Pro",
+      "count": 68
+    },
+    {
+      "family": "メイリオ",
+      "count": 68
+    },
+    {
+      "family": "Meiryo",
+      "count": 68
+    },
+    {
+      "family": "ＭＳ ゴシック",
+      "count": 68
+    },
+    {
+      "family": "sans-serif",
+      "count": 68
+    }
+  ],
+  "colors": {
+    "primary": "#FFDFAA",
+    "accent": "#2A3FAA",
+    "background": "#000000",
+    "textPrimary": "#000000",
+    "link": "#2A3FAA"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Poppins",
+      "heading": "Poppins"
+    },
+    "fontStacks": {
+      "body": [
+        "Poppins",
+        "游ゴシック",
+        "Yu Gothic",
+        "YuGothic",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        "Meiryo",
+        "ＭＳ ゴシック",
+        "sans-serif"
+      ],
+      "heading": [
+        "Poppins",
+        "游ゴシック",
+        "Yu Gothic",
+        "YuGothic",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        "Meiryo",
+        "ＭＳ ゴシック",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Poppins",
+        "游ゴシック",
+        "Yu Gothic",
+        "YuGothic",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        "Meiryo",
+        "ＭＳ ゴシック",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "18px",
+      "h2": "25px",
+      "body": "13px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 10,
+    "borderRadius": "5px"
+  },
+  "components": {},
+  "images": {
+    "logo": "https://www.billboard-japan.com/common/img/img_header_sitelogo.png",
+    "favicon": "https://www.billboard-japan.com/favicon.ico",
+    "ogImage": "https://www.billboard-japan.com/scale/news/00000061/61757/x200_image.jpeg"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Strong indicators: variant bonus (+8), header logo linking to homepage, header location, visible, highest logo on page, src contains logo, class contains logo, alt exactly matches brand name \"Billboard JAPAN\", reasonable size. Score: 140 (clear winner by 110 points)",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "confidence": 0
+  },
+  "confidence": {
+    "buttons": 0,
+    "colors": 0,
+    "overall": 0
+  }
+}

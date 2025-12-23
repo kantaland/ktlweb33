@@ -88,9 +88,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "ANARCHY x KANTA team up for the first time with Reebok Classic to release music video for \"MONKEY TALK\"",
         outlet: "BILLBOARD-JAPAN",
         date: "2020-03-30",
-        url: "https://billboard.jp",
+        url: "https://www.billboard-japan.com/d_news/detail/61757",
         snippet: "The music video for \"MONKEY TALK,\" a collaboration between ANARCHY, KANTA, and Reebok Classic, has been released. The song follows YENTOWN's recent release from Reebok Classic.",
-        imageUrl: "https://images.unsplash.com/photo-1511379938547-c1f69b13d835?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/image_1766474818245.jpeg"
     },
     {
         id: 'p7',
