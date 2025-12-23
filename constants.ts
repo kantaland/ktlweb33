@@ -187,9 +187,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Joins Legendary MAJOR FORCE Revival Party in Tokyo",
         outlet: "HOUYHNHNM",
         date: "2016-11-04",
-        url: "https://houyhnhnm.jp",
+        url: "https://www.houyhnhnm.jp/en/news/17006/",
         snippet: "K.A.N.T.A, the biological son of K.U.D.O. and SK8Sin13 (SKATETHING), will be part of this historic gathering, showcasing both his music and immersive art pieces from Tokyo to the world.",
-        imageUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/major-force-revival-article.webp"
     },
     {
         id: 'p18',
