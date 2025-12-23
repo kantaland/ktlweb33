@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -70,6 +69,11 @@
         color: #0f0f0f;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        cursor: none; /* Globally hide cursor for smoother experience */
+      }
+      /* Ensure inputs show cursor if needed, or keep hidden for custom cursor consistency */
+      a, button, input, select, textarea {
+          cursor: none;
       }
       ::selection {
         background-color: #000000;

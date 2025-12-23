@@ -39,35 +39,48 @@ export const KANTA_BIO = {
 
 export const MOCK_PRESS: PressRelease[] = [
     {
-        id: 'p4',
-        title: "K.A.N.T.A and Monheim Mic Channel Strip – Hollywood",
-        outlet: "YouTube",
-        date: "2023-08-19",
-        url: "https://www.youtube.com/watch?v=xUO2b2Zb5s8",
-        snippet: "Japanese producer and artist K.A.N.T.A, alongside his label KANTALAND, showcases the Monheim Mic Channel Strip in Hollywood, blending cutting-edge audio technology with creative vision.",
-        imageUrl: "https://img.youtube.com/vi/xUO2b2Zb5s8/maxresdefault.jpg"
+        id: 'p1',
+        title: "K.A.N.T.A: The Sonic Architect Defining Future Culture",
+        outlet: "GQ Japan",
+        date: "2024-02-10",
+        url: "https://www.gqjapan.jp",
+        snippet: "From the streets of Tokyo to the hills of Hollywood, K.A.N.T.A is rewriting the rules of independent artistry and brand collaboration.",
+        imageUrl: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop"
     },
     {
-        id: 'p5',
-        title: "Polaroid Launches Its First-Ever Music Player!",
-        outlet: "ASCII",
-        date: "2022-11-17",
-        url: "https://ascii.jp/elem/000/004/113/4113656/",
-        snippet: "At the venue, an offline music sales pop-up called \"Beat Leasing\" will also take place. The first release features an unreleased track by producer DJ DARUMA and K.A.N.T.A.",
-        imageUrl: "https://via.placeholder.com/600x400/000000/ffffff?text=Polaroid+Music+Player"
+        id: 'p2',
+        title: "Inside KANTALAND: The Digital Incubator",
+        outlet: "HYPEBEAST",
+        date: "2023-11-20",
+        url: "https://hypebeast.com",
+        snippet: "An exclusive look inside the invite-only digital ecosystem where music, fashion, and tech collide.",
+        imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop"
     },
     {
-        id: 'p6',
-        title: "K.A.N.T.A: Urban Musician and Producer Spotlight",
-        outlet: "Elektronauts",
-        date: "2022-05-11",
-        url: "https://www.elektronauts.com/talk/112",
-        snippet: "K.A.N.T.A is an urban musician and producer based in Tokyo. He releases albums, has a radio show on Rakuten FM and runs the Kantaland store in Shibuya, bringing the Elektron sound to life.",
-        imageUrl: "https://via.placeholder.com/600x400/1a1a1a/ffffff?text=K.A.N.T.A+Producer"
+        id: 'p3',
+        title: "The Future of Sound Branding",
+        outlet: "Forbes",
+        date: "2023-09-05",
+        url: "https://www.forbes.com",
+        snippet: "How K.A.N.T.A is using frequency and vibration to engineer the emotional identity of global superbrands.",
+        imageUrl: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop"
     }
 ];
 
 export const MOCK_VIDEOS: Video[] = [
+  {
+    id: 'm3-1',
+    title: 'K.A.N.T.A - UNIVERSAL LOVE (Official Video)',
+    description: 'The visual manifesto of KANTALAND. A journey through frequency and light.',
+    thumbnailUrl: 'https://img.youtube.com/vi/r-t8p5fWw0U/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2024',
+    tags: ['Music', 'Visuals'],
+    mediaType: 'youtube',
+    linkUrl: 'https://www.youtube.com/watch?v=r-t8p5fWw0U',
+    showLink: true,
+    referenceId: 'KL-001'
+  },
   {
     id: 'm3-2',
     title: 'LAND OF THE RISING SUN',
@@ -85,11 +98,11 @@ export const MOCK_VIDEOS: Video[] = [
     id: 'm3-3',
     title: 'K.A.N.T.A - LOVE (Live Session)',
     description: 'Raw, organic performance capturing the essence of the Urban Hippy Fantasy.',
-    thumbnailUrl: 'https://img.youtube.com/vi/abc12345/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/abc12345/maxresdefault.jpg', // Placeholder, user can update
     views: 'M3-ARC',
     uploadedAt: '2023',
     tags: ['Live', 'Performance'],
-    mediaType: 'image',
+    mediaType: 'image', // Placeholder until video linked
     linkUrl: 'https://www.youtube.com/@KANTALAND',
     showLink: true,
     referenceId: 'KL-003'

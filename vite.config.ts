@@ -6,24 +6,9 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       server: {
-        port: 5000,
+        port: 3000,
         host: '0.0.0.0',
-        allowedHosts: true,
-        proxy: {
-          '/api': {
-            target: 'http://127.0.0.1:3001',
-            changeOrigin: true,
-            rewrite: (path) => path,
-            ws: true
-          }
-        }
       },
-      build: {
-        outDir: 'dist',
-        assetsDir: 'assets',
-        sourcemap: false
-      },
-      publicDir: 'public',
       plugins: [react()],
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),

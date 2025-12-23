@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { Song, Beat, Video, PressRelease, Project, ProjectUpdate, InvestorProfile } from '../types';
 import { MOCK_PRESS, INCUBATOR_TEXT, KANTA_BIO, INVESTMENT_PROJECTS, MOCK_VIDEOS, MOCK_SONGS } from '../constants';
@@ -115,7 +114,7 @@ const INITIAL_STATE: GlobalState = {
               mission: "To create a global ecosystem where creativity, strategic insight, and culture converge. We provide the tools, the guidance, and the capital — light, fast, and intentional."
           },
           architect: {
-              image: "/architect-profile.png",
+              image: "/kanta.jpg", // Updated to point to the new image
               bio: KANTA_BIO.desc,
               quote: "KANTALAND is the living blueprint of a global cultural architect."
           },
@@ -123,8 +122,7 @@ const INITIAL_STATE: GlobalState = {
               description: "Powered by Tech Partners: AWAL / Sony music UK. Empowering artists with global reach.",
               creditsUrl: "https://credits.muso.ai/profile/d3a0d803-06ce-40e6-a7e0-80aeb0efb9b1",
               repositories: [
-                  { id: 'repo-1', label: 'Master Portfolio', url: 'https://open.spotify.com/playlist/5XIXIf02SeKTiD6Scsxu77?si=VzKV6Gk4QJ6TsOt7SF3IPQ' },
-                  { id: 'repo-2', label: 'Featured', url: 'https://open.spotify.com/playlist/7ip8aoBHAYD3ORf92o2Eps?si=Yc3YlBNqR4-WBfHJB0hjZw' }
+                  { id: 'repo-1', label: 'Master Portfolio', url: 'https://open.spotify.com/artist/1sb3bbYGpYX84TKUvdw2dO' }
               ] 
           },
           placements: {
@@ -153,14 +151,12 @@ const STATE_KEY = 'kantalnad_site_data_v7';
 
 // Determine API URL based on environment
 const getApiUrl = () => {
-    // In browser context, use relative path
-    // This works in both dev (via Vite proxy) and production (Vercel)
+    // Dynamically determine the API endpoint. 
+    // This allows it to work on localhost (if env vars set) or any deployed Vercel URL.
     if (typeof window !== 'undefined') {
-        // Always use relative path - Vercel handles routing
         return '/api/sync';
     }
-    // Server-side fallback
-    return 'http://localhost:3001/api/sync';
+    return '/api/sync';
 };
 
 // LOCAL INDEXED DB HELPERS (FALLBACK)
@@ -211,8 +207,7 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
           setIsSyncing(true);
           const apiUrl = getApiUrl();
           
-          // 1. Always try cloud first (production database is source of truth)
-          let cloudDataLoaded = false;
+          // 1. Try to fetch from Vercel Postgres API
           try {
               const timestamp = new Date().getTime();
               const response = await fetch(`${apiUrl}?t=${timestamp}`, {
@@ -226,45 +221,27 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
               if (response.ok) {
                   const cloudData = await response.json();
                   if (cloudData && cloudData.siteData) {
-                      console.log("✓ Loaded FRESH data from Database");
+                      console.log("Loaded FRESH data from Vercel Postgres");
                       setState(cloudData);
-                      await dbSave(cloudData);
-                      cloudDataLoaded = true;
+                      dbSave(cloudData); // Update local cache with fresh cloud data
                       setIsSyncing(false);
-                      return;
+                      return; // STOP HERE if cloud sync worked.
                   } else if (cloudData.empty) {
-                      console.log("Database empty - seeding with defaults");
-                      cloudDataLoaded = true;
-                      // Auto-sync defaults to database when empty
-                      const payload = JSON.stringify(INITIAL_STATE);
-                      fetch(apiUrl, {
-                          method: 'POST',
-                          headers: { 
-                              'Content-Type': 'application/json',
-                              'Authorization': 'Bearer KANTA0910'
-                          },
-                          body: payload
-                      }).catch(e => console.warn("Default seed failed:", e));
+                      console.log("DB Empty. Using built-in defaults.");
+                      // If DB is empty, we keep INITIAL_STATE (which now has high quality data)
                   }
               }
           } catch (e) {
-              console.warn("⚠ Cannot reach database, checking local cache...", e);
+              console.warn("Cloud sync unavailable, using local or default.", e);
           }
 
-          // 2. Fallback to Local IndexedDB ONLY if cloud is unreachable
-          if (!cloudDataLoaded) {
-              const localData = await dbLoad();
-              if (localData && localData.siteData) {
-                   console.log("✓ Loaded from Local Cache");
-                   setState(localData);
-                   setIsSyncing(false);
-                   return;
-              }
+          // 2. Fallback to Local IndexedDB (Only if Cloud failed)
+          const localData = await dbLoad();
+          if (localData) {
+               console.log("Loaded from Local Storage (Fallback)");
+               setState(prev => ({ ...prev, ...localData }));
           }
 
-          // 3. Final fallback: use built-in defaults
-          console.log("Using built-in defaults");
-          setState(INITIAL_STATE);
           setIsSyncing(false);
       };
 
@@ -284,39 +261,6 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   const persist = async (newState: GlobalState) => {
       // 1. Always save locally immediately for speed
       await dbSave(newState);
-      
-      // 2. Auto-sync to cloud immediately (wrap state in proper format)
-      const payload = JSON.stringify(newState);
-      const sizeInBytes = new Blob([payload]).size;
-      const sizeInMB = sizeInBytes / (1024 * 1024);
-      
-      // Verify size before sending
-      if (sizeInMB > 4.4) {
-          console.warn(`Payload too large (${sizeInMB.toFixed(2)}MB), skipping sync`);
-          return;
-      }
-      
-      const apiUrl = getApiUrl();
-      try {
-          const res = await fetch(apiUrl, {
-              method: 'POST',
-              headers: { 
-                  'Content-Type': 'application/json',
-                  'Authorization': 'Bearer KANTA0910'
-              },
-              body: payload,
-              cache: 'no-store'
-          });
-          
-          if (!res.ok) {
-              const errText = await res.text().catch(() => '');
-              console.warn(`Auto-sync failed with status ${res.status}: ${errText}`);
-          } else {
-              console.log("✓ Auto-sync completed to database");
-          }
-      } catch (e) {
-          console.warn("Auto-sync network error:", e);
-      }
   };
 
   const publish = async (retryCount = 0) => {
@@ -326,7 +270,7 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
       const payload = JSON.stringify(state);
       const sizeInBytes = new Blob([payload]).size;
       const sizeInMB = sizeInBytes / (1024 * 1024);
-      console.log(`📤 Publishing: ${sizeInMB.toFixed(2)} MB`);
+      console.log(`Payload size: ${sizeInMB.toFixed(2)} MB`);
       
       // Strict Vercel Limit
       if (sizeInMB > 4.4) {
@@ -337,6 +281,7 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 
       const apiUrl = getApiUrl();
       try {
+          // 2. Push to Vercel Postgres
           const res = await fetch(apiUrl, {
               method: 'POST',
               headers: { 
@@ -353,22 +298,22 @@ export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) =
                   throw new Error("Payload Too Large. Please remove some media.");
               }
               if (res.status === 500) {
-                   if (retryCount < 2) {
-                       console.log(`Retry attempt ${retryCount + 1}/2...`);
-                       await new Promise(resolve => setTimeout(resolve, 1000));
-                       return await publish(retryCount + 1);
+                   // Retry logic for connection issues
+                   if (retryCount < 1) {
+                       console.log("Retrying publish...");
+                       setTimeout(() => publish(retryCount + 1), 1000);
+                       return;
                    }
-                   throw new Error("Database Connection Error. Try again.");
+                   throw new Error("Database Connection Error. Check Vercel Dashboard.");
               }
               
               throw new Error(errData.error || `Server Error: ${res.statusText}`);
           }
           
-          console.log("✓ Published successfully to database");
-          if (retryCount === 0) alert("✓ Successfully published to KANTALAND Cloud.");
+          if (retryCount === 0) alert("Successfully Synced to KANTALAND Cloud.");
       } catch (e: any) {
-          console.error("❌ Publish Error:", e);
-          if (retryCount === 0) alert(`⚠ Sync failed: ${e.message}\n\nData saved locally.`);
+          console.error("Publish Error", e);
+          if (retryCount === 0) alert(`Cloud sync failed: ${e.message}\n\nData is saved locally on this device.`);
       } finally {
           setIsSyncing(false);
       }

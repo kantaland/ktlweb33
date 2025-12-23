@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { KANTA_BIO } from '../constants';
-import { Quote, ArrowRight, ShieldCheck, Globe, Zap } from 'lucide-react';
+import { Quote, ArrowRight, ShieldCheck, Globe, Zap, Crosshair } from 'lucide-react';
 import { useAdmin } from '../contexts/AdminContext';
 import { EditableText, EditableImage } from './Editable';
 
@@ -44,17 +43,43 @@ const Architect: React.FC = () => {
                     
                     {/* Visual & Narrative Column */}
                     <div className="lg:col-span-8">
-                        <div className="aspect-[4/5] bg-gray-100 mb-20 relative group overflow-hidden border border-gray-100 shadow-2xl">
-                            <EditableImage 
-                                src={siteData.architect.image}
-                                onSave={(src) => { updateSiteData('architect', { image: src }); publish(); }}
-                                className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-[2000ms] ease-luxury scale-105 group-hover:scale-100"
-                                containerClassName="w-full h-full"
-                            />
-                            {/* Technical Overlay */}
-                            <div className="absolute top-8 left-8 p-4 border border-white/20 backdrop-blur-sm hidden md:block">
-                                <span className="text-[9px] font-bold tracking-brand text-white uppercase block mb-1">Blueprint Profile</span>
-                                <span className="text-xs font-light text-white/60">KANTA // ARCHITECT_001</span>
+                        {/* LAB LEVEL IMAGE CONTAINER */}
+                        <div className="relative mb-20 group select-none">
+                            {/* Technical Brackets */}
+                            <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-black z-20"></div>
+                            <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-black z-20"></div>
+                            <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-black z-20"></div>
+                            <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-black z-20"></div>
+
+                            {/* Main Image Frame */}
+                            <div className="aspect-[4/5] bg-gray-100 relative overflow-hidden border border-gray-100 shadow-2xl">
+                                <EditableImage 
+                                    src={siteData.architect.image}
+                                    onSave={(src) => { updateSiteData('architect', { image: src }); publish(); }}
+                                    className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-[2000ms] ease-luxury scale-105 group-hover:scale-100"
+                                    containerClassName="w-full h-full"
+                                />
+                                
+                                {/* Scanline Effect */}
+                                <div className="absolute inset-0 bg-[linear-gradient(transparent_0%,rgba(0,0,0,0.1)_50%,transparent_100%)] bg-[length:100%_4px] opacity-20 pointer-events-none z-10"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10 pointer-events-none"></div>
+
+                                {/* HUD Elements */}
+                                <div className="absolute top-8 left-8 p-4 border border-white/20 backdrop-blur-sm hidden md:block z-20">
+                                    <span className="text-[9px] font-bold tracking-brand text-white uppercase block mb-1 flex items-center gap-2">
+                                        <Crosshair size={10} className="text-emerald-500 animate-pulse"/> Target ID
+                                    </span>
+                                    <span className="text-xs font-light text-white/90">KANTA // ARCHITECT_001</span>
+                                </div>
+                                
+                                <div className="absolute bottom-8 right-8 z-20 flex flex-col items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    <div className="flex gap-1 mb-2">
+                                        <div className="w-1 h-1 bg-white rounded-full animate-pulse"></div>
+                                        <div className="w-1 h-1 bg-white rounded-full animate-pulse delay-75"></div>
+                                        <div className="w-1 h-1 bg-white rounded-full animate-pulse delay-150"></div>
+                                    </div>
+                                    <span className="text-[9px] font-bold uppercase tracking-widest text-white/80">Biometric Scan Complete</span>
+                                </div>
                             </div>
                         </div>
 
@@ -67,7 +92,7 @@ const Architect: React.FC = () => {
                                 className="text-2xl md:text-4xl font-light leading-snug text-gray-900 mb-16"
                             />
                             
-                            {/* CORPORATE PARTNERS GRID - The requested brands */}
+                            {/* CORPORATE PARTNERS GRID */}
                             <div className="mb-24">
                                 <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-4">
                                     <ShieldCheck size={18} className="text-black" />

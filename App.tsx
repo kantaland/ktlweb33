@@ -12,6 +12,8 @@ import GlobalEditorMenu from './components/GlobalEditorMenu';
 import InvestorLogin from './components/InvestorLogin';
 import InvestorDashboard from './components/InvestorDashboard';
 import SimpleContentPage from './components/SimpleContentPage';
+import SystemLoader from './components/SystemLoader';
+import LabCursor from './components/LabCursor';
 import { Tab } from './types';
 import { Instagram, Linkedin, Music } from 'lucide-react';
 import { useAdmin } from './contexts/AdminContext';
@@ -19,6 +21,7 @@ import { useAdmin } from './contexts/AdminContext';
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Tab>(Tab.HOME);
   const { isAuthenticated } = useAdmin();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -232,71 +235,78 @@ const App: React.FC = () => {
 
   return (
     <>
-        <div className="animate-[fadeIn_0.8s_ease-out]">
-            <div className="noise-overlay"></div>
-            
-            <div className={`bg-white text-rover-text font-sans selection:bg-black selection:text-white min-h-screen flex flex-col lab-grid`}>
-                <Navbar currentTab={activeTab} onTabChange={setActiveTab} />
-                {isAuthenticated && <GlobalEditorMenu onNavigate={setActiveTab} />}
+        {isLoading && <SystemLoader onComplete={() => setIsLoading(false)} />}
+        
+        {!isLoading && (
+            <div className="animate-[fadeIn_0.8s_ease-out] cursor-none">
+                <LabCursor />
+                <div className="noise-overlay fixed inset-0 z-50 pointer-events-none opacity-[0.03]"></div>
+                {/* Global Scanlines */}
+                <div className="fixed inset-0 z-40 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%),linear-gradient(90deg,rgba(255,0,0,0.03),rgba(0,255,0,0.01),rgba(0,0,255,0.03))] bg-[length:100%_2px,3px_100%]"></div>
                 
-                <main className="flex-grow w-full">
-                    {renderContent()}
-                </main>
-                
-                <footer className="w-full bg-white border-t border-rover-border pt-32 pb-16">
-                    <div className="max-w-[1800px] mx-auto px-6 md:px-16">
-                        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-y-24 gap-x-16 mb-32">
-                            <div className="col-span-2 md:col-span-1">
-                                <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-black mb-10">ARCHIVE</h3>
-                                <ul className="space-y-5">
-                                    <li><button onClick={() => setActiveTab(Tab.INCUBATOR)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">The Vision</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.HOLLYWOOD)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Hollywood</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.M3)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Design</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.ARCHITECT)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Architect</button></li>
-                                </ul>
+                <div className={`bg-white text-rover-text font-sans selection:bg-black selection:text-white min-h-screen flex flex-col lab-grid`}>
+                    <Navbar currentTab={activeTab} onTabChange={setActiveTab} />
+                    {isAuthenticated && <GlobalEditorMenu onNavigate={setActiveTab} />}
+                    
+                    <main className="flex-grow w-full">
+                        {renderContent()}
+                    </main>
+                    
+                    <footer className="w-full bg-white border-t border-rover-border pt-32 pb-16">
+                        <div className="max-w-[1800px] mx-auto px-6 md:px-16">
+                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-y-24 gap-x-16 mb-32">
+                                <div className="col-span-2 md:col-span-1">
+                                    <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-black mb-10">ARCHIVE</h3>
+                                    <ul className="space-y-5">
+                                        <li><button onClick={() => setActiveTab(Tab.INCUBATOR)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">The Vision</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.HOLLYWOOD)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Hollywood</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.M3)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Design</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.ARCHITECT)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Architect</button></li>
+                                    </ul>
+                                </div>
+                                <div className="col-span-2 md:col-span-1">
+                                    <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-black mb-10">DIVISIONS</h3>
+                                    <ul className="space-y-5">
+                                        <li><button onClick={() => setActiveTab(Tab.DISTRIBUTION)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Distribution</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.PUBLISHING)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Publishing</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.CREATIVE_DIRECTION)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Direction</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.VISUAL_IDENTITY)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Identity</button></li>
+                                    </ul>
+                                </div>
+                                <div className="col-span-2 md:col-span-1">
+                                    <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-black mb-10">PROTOCOL</h3>
+                                    <ul className="space-y-5">
+                                        <li><button onClick={() => setActiveTab(Tab.PRIVACY_POLICY)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Privacy</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.TERMS_OF_USE)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Terms</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.SUBMISSIONS)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Submissions</button></li>
+                                    </ul>
+                                </div>
+                                <div className="col-span-2 md:col-span-1">
+                                    <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-black mb-10">ACCESS</h3>
+                                    <ul className="space-y-5">
+                                        <li><button onClick={() => setActiveTab(Tab.INVESTOR_LOGIN)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Investor Portal</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.PRESS)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Press Room</button></li>
+                                        <li><button onClick={() => setActiveTab(Tab.CAREERS)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Careers</button></li>
+                                    </ul>
+                                </div>
+                                <div className="col-span-2 lg:col-span-1 flex justify-start md:justify-end gap-10 items-start">
+                                    <a href="https://www.instagram.com/kantaland" target="_blank" className="text-black hover:opacity-40 transition-all duration-500"><Instagram size={24} strokeWidth={1}/></a>
+                                    <a href="https://www.linkedin.com/in/kanta-kudo-5b018785/" target="_blank" className="text-black hover:opacity-40 transition-all duration-500"><Linkedin size={24} strokeWidth={1}/></a>
+                                    <a href="https://open.spotify.com/artist/1sb3bbYGpYX84TKUvdw2dO?si=br_43bPvTb2FFoylyYC1Lg" target="_blank" className="text-black hover:opacity-40 transition-all duration-500"><Music size={24} strokeWidth={1}/></a>
+                                </div>
                             </div>
-                            <div className="col-span-2 md:col-span-1">
-                                <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-black mb-10">DIVISIONS</h3>
-                                <ul className="space-y-5">
-                                    <li><button onClick={() => setActiveTab(Tab.DISTRIBUTION)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Distribution</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.PUBLISHING)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Publishing</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.CREATIVE_DIRECTION)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Direction</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.VISUAL_IDENTITY)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Identity</button></li>
-                                </ul>
-                            </div>
-                            <div className="col-span-2 md:col-span-1">
-                                <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-black mb-10">PROTOCOL</h3>
-                                <ul className="space-y-5">
-                                    <li><button onClick={() => setActiveTab(Tab.PRIVACY_POLICY)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Privacy</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.TERMS_OF_USE)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Terms</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.SUBMISSIONS)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Submissions</button></li>
-                                </ul>
-                            </div>
-                            <div className="col-span-2 md:col-span-1">
-                                <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-black mb-10">ACCESS</h3>
-                                <ul className="space-y-5">
-                                    <li><button onClick={() => setActiveTab(Tab.INVESTOR_LOGIN)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Investor Portal</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.PRESS)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Press Room</button></li>
-                                    <li><button onClick={() => setActiveTab(Tab.CAREERS)} className="text-[11px] text-gray-400 hover:text-black transition-colors uppercase tracking-[0.2em] font-medium">Careers</button></li>
-                                </ul>
-                            </div>
-                            <div className="col-span-2 lg:col-span-1 flex justify-start md:justify-end gap-10 items-start">
-                                <a href="https://www.instagram.com/kantaland" target="_blank" className="text-black hover:opacity-40 transition-all duration-500"><Instagram size={24} strokeWidth={1}/></a>
-                                <a href="https://www.linkedin.com/in/kanta-kudo-5b018785/" target="_blank" className="text-black hover:opacity-40 transition-all duration-500"><Linkedin size={24} strokeWidth={1}/></a>
-                                <a href="https://open.spotify.com/artist/1sb3bbYGpYX84TKUvdw2dO?si=br_43bPvTb2FFoylyYC1Lg" target="_blank" className="text-black hover:opacity-40 transition-all duration-500"><Music size={24} strokeWidth={1}/></a>
-                            </div>
-                        </div>
 
-                        <div className="border-t border-rover-border pt-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-                            <div className="flex flex-col gap-2">
-                                <p className="text-[10px] text-gray-900 uppercase tracking-[0.5em] font-bold">© {new Date().getFullYear()} KANTALAND.</p>
-                                <p className="text-[9px] text-gray-400 uppercase tracking-[0.3em] font-medium">A subsidiary of URBAN HIPPY FANTASY, a California Corporation.</p>
+                            <div className="border-t border-rover-border pt-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+                                <div className="flex flex-col gap-2">
+                                    <p className="text-[10px] text-gray-900 uppercase tracking-[0.5em] font-bold">© {new Date().getFullYear()} KANTALAND.</p>
+                                    <p className="text-[9px] text-gray-400 uppercase tracking-[0.3em] font-medium">A subsidiary of URBAN HIPPY FANTASY, a California Corporation.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
+                </div>
             </div>
-        </div>
+        )}
     </>
   );
 };

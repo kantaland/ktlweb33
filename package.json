@@ -1,3 +1,4 @@
+
 {
   "name": "kantaland-web",
   "private": true,
@@ -5,15 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:server": "tsx server.ts",
-    "dev:all": "concurrently \"npm run dev:server\" \"npm run dev\"",
-    "build": "npm run prisma:generate && npm run tsc && npm run vite:build",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate deploy",
-    "tsc": "tsc --noEmit",
-    "vite:build": "vite build",
-    "start": "node api/index.ts",
-    "vercel:build": "npm run prisma:generate && npm run tsc && npm run vite:build",
+    "build": "prisma generate && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -21,28 +14,20 @@
     "@prisma/client": "^5.22.0",
     "@prisma/extension-accelerate": "^1.2.1",
     "@vercel/postgres": "^0.7.2",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "jspdf": "^2.5.1",
     "lucide-react": "^0.455.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "jspdf": "^2.5.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
     "@types/node": "^22.10.1",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@vercel/node": "^3.0.13",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
-    "concurrently": "^9.2.1",
     "postcss": "^8.4.49",
     "prisma": "^5.22.0",
     "tailwindcss": "^3.4.17",
-    "tsx": "^4.21.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.3"
   }
