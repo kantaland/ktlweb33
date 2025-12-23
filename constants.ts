@@ -598,6 +598,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2011',
     domain: 'Music'
+  },
+  {
+    id: 'TOKYO-LOVECHILD-2011',
+    title: 'LOVE CHILD ft Leo Imai',
+    description: 'Song writing composition, sponsored by Lacoste Japan',
+    thumbnailUrl: 'https://img.youtube.com/vi/b9XIjmXMCX4/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2011',
+    date: '2011-01-01',
+    tags: ['Music', 'Collaboration'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/b9XIjmXMCX4',
+    showLink: true,
+    referenceId: 'TOKYO-2011',
+    domain: 'Music'
   }
 ];
 
