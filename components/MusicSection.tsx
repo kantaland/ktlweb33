@@ -113,20 +113,20 @@ const MusicSection: React.FC = () => {
       )}
 
       {/* Editorial Header */}
-      <div className="max-w-[1800px] mx-auto px-6 md:px-16 border-t border-black pt-16 mb-24 md:mb-32">
-        <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-16 lg:items-start">
+      <div className="max-w-[1800px] mx-auto px-4 sm:px-6 md:px-16 border-t border-black pt-12 sm:pt-16 mb-16 sm:mb-24 md:mb-32">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 sm:gap-12 lg:gap-16 lg:items-start">
             <div className="flex-1">
-                <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-400 mb-8 md:mb-12 block pl-6 border-l border-black">Hollywood Division // 01</span>
-                <h1 className="text-5xl md:text-9xl font-serif italic text-black mb-8 md:mb-12 tracking-tighter leading-[0.8] max-w-5xl uppercase">
+                <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.5em] uppercase text-gray-400 mb-6 sm:mb-8 md:mb-12 block pl-4 sm:pl-6 border-l border-black">Hollywood Division // 01</span>
+                <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-9xl font-serif italic text-black mb-6 sm:mb-8 md:mb-12 tracking-tighter leading-tight sm:leading-snug md:leading-[0.8] max-w-5xl uppercase">
                     Global <span className="text-gray-300">Distribution</span> Architecture
                 </h1>
-                <p className="max-w-2xl text-xl md:text-3xl text-gray-900 leading-snug font-light">
+                <p className="max-w-2xl text-base sm:text-lg md:text-2xl lg:text-3xl text-gray-900 leading-relaxed sm:leading-snug md:leading-snug font-light">
                     {siteData.music.description}
                 </p>
             </div>
             
-            <div className="flex flex-col gap-8 md:gap-10 items-start lg:items-end">
-                 <div className="flex flex-col gap-4 md:gap-6 w-full sm:w-auto">
+            <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 items-start lg:items-end mt-8 sm:mt-0">
+                 <div className="flex flex-col gap-3 sm:gap-4 md:gap-6 w-full sm:w-auto">
                      <a href="https://open.spotify.com/playlist/5XIXIf02SeKTiD6Scsxu77?si=Jykb8dUFT2S26T3v_geMag" target="_blank" className="flex items-center justify-between gap-12 border-b border-black pb-4 group transition-all">
                          <span className="text-xs font-bold tracking-brand uppercase text-black">Spotify Master</span>
                          <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform text-black"/>
