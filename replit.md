@@ -28,4 +28,6 @@ A React + TypeScript web application built with Vite, featuring a digital collec
 ## Recent Changes
 - Configured for Replit environment (port 5000, allowed hosts)
 - Added video background (hero-background.mp4) to header
-- Deployment configured as static site with build step
+
+## Deployment
+- Deployed on Vercel (not Replit)
