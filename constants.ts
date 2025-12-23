@@ -133,9 +133,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A. lectures full of inspiration were held at Stanford University. What's next in Japan?",
         outlet: "HOUYHNHNM",
         date: "2019-03-22",
-        url: "https://houyhnhnm.jp",
+        url: "https://www.houyhnhnm.jp/en/news/248178/",
         snippet: "K.A.N.T.A.'s activities caught the attention of the most prestigious Stanford University. Recently, he was invited to give a lecture in person, which was held over a period of three days.",
-        imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/stanford-lecture-article.webp"
     },
     {
         id: 'p12',
