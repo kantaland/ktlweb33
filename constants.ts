@@ -628,6 +628,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2012',
     domain: 'Music'
+  },
+  {
+    id: 'TOKYO-TRIANGLE-GLASSMAN-2012',
+    title: 'K.A.N.T.A.N.O.V.A TRIANGLE GLASSMAN LIVE W/ PHARCYDE JAPAN TOUR 2012',
+    description: 'Live performance at GSHOCK 30th Anniversary event',
+    thumbnailUrl: 'https://img.youtube.com/vi/ADs6jGgd4W8/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2012',
+    date: '2012-01-01',
+    tags: ['Music', 'Live', 'Tour'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/ADs6jGgd4W8',
+    showLink: true,
+    referenceId: 'TOKYO-2012',
+    domain: 'Music'
   }
 ];
 
