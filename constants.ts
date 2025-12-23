@@ -568,6 +568,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2015',
     domain: 'Fashion'
+  },
+  {
+    id: 'TOKYO-STANDUPANDsayno-2011',
+    title: 'K.A.N.T.A STAND UP & SAY NO',
+    description: 'Song writing composition for ROYAL NEW STANDARD',
+    thumbnailUrl: 'https://img.youtube.com/vi/hIhLbNsjyag/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2011',
+    date: '2011-01-01',
+    tags: ['Music', 'Composition'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/hIhLbNsjyag',
+    showLink: true,
+    referenceId: 'TOKYO-2011',
+    domain: 'Music'
   }
 ];
 
