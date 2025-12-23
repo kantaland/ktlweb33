@@ -487,12 +487,12 @@ export const MOCK_VIDEOS: Video[] = [
     views: 'M3-ARC',
     uploadedAt: '2014',
     date: '2014-08-20',
-    tags: ['Media', 'Interview', 'Archive'],
+    tags: ['Fashion', 'Interview', 'Archive'],
     mediaType: 'youtube',
     linkUrl: 'https://www.youtube.com/watch?v=6TRd9oH943s',
     showLink: true,
     referenceId: 'TOKYO-2014',
-    domain: 'Media'
+    domain: 'Fashion'
   }
 ];
 
