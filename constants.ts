@@ -493,6 +493,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2014',
     domain: 'Fashion'
+  },
+  {
+    id: 'TOKYO-REEBOK-2017',
+    title: 'KANTALAND X REEBOK CLASSIC ART COLLAB',
+    description: 'Sonic song writing composition and art creative commission work for REEBOK',
+    thumbnailUrl: 'https://img.youtube.com/vi/ZoYCPO4NWQ4/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2017',
+    date: '2017-01-01',
+    tags: ['Art', 'Fashion', 'Collab'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/ZoYCPO4NWQ4',
+    showLink: true,
+    referenceId: 'TOKYO-2017',
+    domain: 'Art'
   }
 ];
 
