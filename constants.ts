@@ -271,6 +271,105 @@ export const MOCK_PRESS: PressRelease[] = [
         url: "https://natalie.mu",
         snippet: "DEXPISTOLS set to release their new mix CD \"LESSON.08 'TOKYO CULT'\" featuring production and contributions from K.A.N.T.A.",
         imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p27',
+        title: "K.A.N.T.A Releases Music Video for \"WALKING BY MY SIDE\"",
+        outlet: "HYPEBEAST",
+        date: "2014-01-28",
+        url: "https://hypebeast.com",
+        snippet: "Bilingual rising artist K.A.N.T.A, son of K.U.D.O from the legendary label MAJOR FORCE, spent his early childhood in London. He has now released his first digital single of 2014, \"WALKING BY MY SIDE.\"",
+        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p28',
+        title: "K.A.N.T.A Releases Global Answer Anthem \"ALL OVER ME\"",
+        outlet: "MASTERED",
+        date: "2013-12-23",
+        url: "https://mastered.com",
+        snippet: "Following the successful debut of K.A.N.T.A.N.O.V.A's first official release, K.A.N.T.A returns with a new single, \"ALL OVER ME.\" The track has been remastered and is now officially available.",
+        imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p29',
+        title: "K.A.N.T.A.N.O.V.A Releases First Official Digital Track",
+        outlet: "MASTERED",
+        date: "2013-12-12",
+        url: "https://mastered.com",
+        snippet: "The band K.A.N.T.A.N.O.V.A, formed by K.A.N.T.A and TOMOHIKO a.k.a HEAVYLOOPER, bassist of SUPER BUTTER DOG, has released their first official track, titled \"K.A.N.T.A.N.O.V.A.\"",
+        imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p30',
+        title: "SOPHNET. 2013 Fall/Winter Collection Revealed – Featuring Music by K.A.N.T.A",
+        outlet: "MASTERED",
+        date: "2013-07-26",
+        url: "https://mastered.com",
+        snippet: "SOPHNET.'s 2013 Fall/Winter collection has been unveiled, continuing the brand's ongoing theme of \"AUTHENTIC.\" The accompanying promotional movie features music by K.A.N.T.A.",
+        imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p31',
+        title: "EXOFEAR BLOOM's Secret EP Released in Limited Quantity via KANTALAND",
+        outlet: "MASTERED",
+        date: "2013-06-24",
+        url: "https://mastered.com",
+        snippet: "The highly anticipated new artist EXOFEAR BLOOM, recently signed to K.A.N.T.A's label KANTALAND, has unveiled their secret EP, \"EXOTIC LOVER.\" The limited-release EP is available today.",
+        imageUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p32',
+        title: "Dream Collaboration Between K.A.N.T.A and Cohenbeats Realized at \"Hennessy Artistry\"",
+        outlet: "MASTERED",
+        date: "2012-09-12",
+        url: "https://mastered.com",
+        snippet: "A long-awaited collaboration between K.A.N.T.A and Cohenbeats has come to life. The producer, rapper, and multi-talented creator K.A.N.T.A joins forces with Cohenbeats, a leading hip-hop producer.",
+        imageUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p33',
+        title: "K.A.N.T.A. - OtherSideOfTheGlobe (Free EP)",
+        outlet: "HYPEBEAST",
+        date: "2011-12-19",
+        url: "https://hypebeast.com",
+        snippet: "K.A.N.T.A. is a London-raised 24-year-old rapper/producer who is currently shaking up the Japanese music scene. Turning heads with a sound that can be best described as a melange of classic rock influences.",
+        imageUrl: "https://images.unsplash.com/photo-1502272773456-58ead602b552?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p34',
+        title: "K.A.N.T.A featuring Leo Imai - Love Child",
+        outlet: "HYPEBEAST",
+        date: "2011-08-10",
+        url: "https://hypebeast.com",
+        snippet: "Being offered today is some fresh live hip-hop talent from Tokyo that goes by the name of K.A.N.T.A. As a son of well-known producer/DJ K.U.D.O (Major Force/Mo'Wax), he was early exposed to quality sound.",
+        imageUrl: "https://images.unsplash.com/photo-1556821840-a68975b8c25f?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p35',
+        title: "K.A.N.T.A's long-awaited debut album was released on August 3!",
+        outlet: "YAPPARI HIPHOP",
+        date: "2011-08-01",
+        url: "https://yappari-hiphop.jp",
+        snippet: "The album has drawn high praise from UNKLE, Howie B, and Andrew Hale (producer for Sade), making it easy to see why major overseas labels are taking notice.",
+        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p36',
+        title: "The highly anticipated debut album from K.A.N.T.A is finally here!",
+        outlet: "HMV",
+        date: "2011-08-01",
+        url: "https://hmv.co.jp",
+        snippet: "K.A.N.T.A, the 23-year-old Japanese rapper/producer and son of legendary K.U.D.O (MAJOR FORCE), is finally releasing his debut album. He spent his early childhood in London until age 12, before returning to Japan.",
+        imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        id: 'p37',
+        title: "K.A.N.T.A Presents \"ASCENSION\" Supported by STUSSY @ Le Baron de Paris",
+        outlet: "HIDDEN-CHAMPION",
+        date: "2010-10-19",
+        url: "https://hidden-champion.jp",
+        snippet: "Concept: \"No border for good music.\" As music has become more accessible through MP3 players and digital technology, the meaning of going out to listen to music has gradually changed.",
+        imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1000&auto=format&fit=crop"
     }
 ];
 
