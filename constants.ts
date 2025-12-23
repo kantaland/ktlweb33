@@ -79,9 +79,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A Signs Label Deal with Kobalt Music AWAL as Debut 10th Anniversary Approaches",
         outlet: "BARKS",
         date: "2020-07-20",
-        url: "https://barks.jp",
+        url: "https://barks.jp/news/889927/",
         snippet: "As K.A.N.T.A approaches the 10th anniversary of his debut in 2021, he has signed a label deal with AWAL, part of the UK major music publishing company Kobalt Music, and announced the launch of a new project.",
-        imageUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kan2_1766474464652.jpg"
     },
     {
         id: 'p6',
