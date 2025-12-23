@@ -405,6 +405,21 @@ export const MOCK_VIDEOS: Video[] = [
     domain: 'Music'
   },
   {
+    id: 'ITALY-GOLDENGOOSE-2017',
+    title: 'GOLDEN GOOSE DELUXE BRAND – PITTI UOMO',
+    description: 'Sonic song writing composition creative commission work for GOLDEN GOOSE DELUXE BRAND',
+    thumbnailUrl: 'https://img.youtube.com/vi/mHWhLzp6e_E/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2017',
+    date: '2017-01-15',
+    tags: ['Music', 'Fashion', 'Event'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/mHWhLzp6e_E',
+    showLink: true,
+    referenceId: 'ITALY-2017',
+    domain: 'Music'
+  },
+  {
     id: 'TOKYO-2017',
     title: 'SPECTRA',
     description: 'Sonic song writing composition creative commission work for Nextdrive Spectra',
