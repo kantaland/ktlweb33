@@ -63,7 +63,7 @@ export const MOCK_PRESS: PressRelease[] = [
         date: "2021-09-02",
         url: "",
         snippet: "After returning to Japan at age 20, he made a unique career pivot to become a music producer. He has composed tracks for numerous TV commercials and worked at the forefront of the music industry.",
-        imageUrl: "https://ik.imagekit.io/replit/image_1766474146612.jpg"
+        imageUrl: "/475303684_9503204693063432_470302156672095409_n_1766474245616.jpg"
     },
     {
         id: 'p4',
