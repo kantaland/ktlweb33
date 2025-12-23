@@ -647,17 +647,17 @@ export const MOCK_VIDEOS: Video[] = [
   {
     id: 'KANGOL-75TH-FASHION-2014SS',
     title: 'KANGOL 75th ANNIVERSARY FASHION SHOW 2014 S/S',
-    description: 'Fashion show performance for KANGOL',
+    description: 'Fashion show performance and sonic composition work for KANGOL',
     thumbnailUrl: 'https://img.youtube.com/vi/mThdWPzZI8c/maxresdefault.jpg',
     views: 'M3-ARC',
     uploadedAt: '2014',
     date: '2014-01-01',
-    tags: ['Fashion', 'Show'],
+    tags: ['Music', 'Fashion', 'Show'],
     mediaType: 'youtube',
-    linkUrl: 'https://youtu.be/mThdWPzZI8c?si=mxh6ynLBlmjsZWHw',
+    linkUrl: 'https://www.youtube.com/watch?v=mThdWPzZI8c',
     showLink: true,
     referenceId: 'TOKYO-2014',
-    domain: 'Fashion'
+    domain: 'Music'
   },
   {
     id: 'WALKINGBYMYSIDE-TOBEUS',
