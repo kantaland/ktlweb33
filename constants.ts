@@ -386,6 +386,19 @@ export const MOCK_VIDEOS: Video[] = [
     linkUrl: 'https://www.youtube.com/watch?v=J4WYD0go15I&t=3s',
     showLink: true,
     referenceId: 'TOKYO-2017'
+  },
+  {
+    id: 'TOKYO-2014-INT',
+    title: 'K.A.N.T.A SHORT INTERVIEW IN TOKYO 2014',
+    description: 'Short interview documenting K.A.N.T.A in Tokyo during 2014, capturing early perspectives, creative direction, and cultural context.',
+    thumbnailUrl: 'https://img.youtube.com/vi/6TRd9oH943s/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2014',
+    tags: ['Interview', 'Archive', 'Media'],
+    mediaType: 'youtube',
+    linkUrl: 'https://www.youtube.com/watch?v=6TRd9oH943s',
+    showLink: true,
+    referenceId: 'TOKYO-2014'
   }
 ];
 
