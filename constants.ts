@@ -613,6 +613,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2011',
     domain: 'Music'
+  },
+  {
+    id: 'TOKYO-KANTANOVA-2012',
+    title: 'K.A.N.T.A LIVE SESSION K.A.N.T.A.N.O.V.A',
+    description: 'Live performance session by K.A.N.T.A N.O.V.A',
+    thumbnailUrl: 'https://img.youtube.com/vi/rWVknFIJnos/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2012',
+    date: '2012-01-01',
+    tags: ['Music', 'Live', 'Session'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/rWVknFIJnos',
+    showLink: true,
+    referenceId: 'TOKYO-2012',
+    domain: 'Music'
   }
 ];
 
