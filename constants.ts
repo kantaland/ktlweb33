@@ -295,9 +295,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A.N.O.V.A Releases First Official Digital Track",
         outlet: "MASTERED",
         date: "2013-12-12",
-        url: "https://mastered.com",
+        url: "https://mastered.jp/news/kantanova/",
         snippet: "The band K.A.N.T.A.N.O.V.A, formed by K.A.N.T.A and TOMOHIKO a.k.a HEAVYLOOPER, bassist of SUPER BUTTER DOG, has released their first official track, titled \"K.A.N.T.A.N.O.V.A.\"",
-        imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kantanova-first-track.jpg"
     },
     {
         id: 'p30',
