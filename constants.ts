@@ -553,6 +553,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2020',
     domain: 'Media'
+  },
+  {
+    id: 'TOKYO-AVAIL-2015',
+    title: 'AVAIL - BROWN LABEL CM (LONG VER)',
+    description: 'Sonic song writing composition and creative director , creative commission work for Shimamura Group',
+    thumbnailUrl: 'https://img.youtube.com/vi/ge2dcLXIPEs/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2015',
+    date: '2015-01-01',
+    tags: ['Fashion', 'Brand', 'Commercial'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/ge2dcLXIPEs',
+    showLink: true,
+    referenceId: 'TOKYO-2015',
+    domain: 'Fashion'
   }
 ];
 
