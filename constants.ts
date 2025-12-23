@@ -583,6 +583,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2011',
     domain: 'Music'
+  },
+  {
+    id: 'TOKYO-LIGHTBLUESUIT-2011',
+    title: 'LIGHTBLUESUIT',
+    description: 'Song writing composition collaboration with XLARG',
+    thumbnailUrl: 'https://img.youtube.com/vi/xmS4iCQPa6s/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2011',
+    date: '2011-01-01',
+    tags: ['Music', 'Collaboration'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/xmS4iCQPa6s',
+    showLink: true,
+    referenceId: 'TOKYO-2011',
+    domain: 'Music'
   }
 ];
 
