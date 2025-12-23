@@ -358,9 +358,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "The highly anticipated debut album from K.A.N.T.A is finally here!",
         outlet: "HMV",
         date: "2011-08-01",
-        url: "https://hmv.co.jp",
+        url: "https://www.hmv.co.jp/news/article/1108010054/?utm_source=chatgpt.com",
         snippet: "K.A.N.T.A, the 23-year-old Japanese rapper/producer and son of legendary K.U.D.O (MAJOR FORCE), is finally releasing his debut album. He spent his early childhood in London until age 12, before returning to Japan.",
-        imageUrl: "https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kanta-debut-album.jpg"
     },
     {
         id: 'p37',
