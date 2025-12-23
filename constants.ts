@@ -259,9 +259,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "K.A.N.T.A: \"Step off society's boat and dive into the world of sensation.\"",
         outlet: "MOUTAKUSANDA",
         date: "2014-05-24",
-        url: "https://moutakusanda.jp",
+        url: "https://moutakusanda.com/articles/kanta/",
         snippet: "An in-depth conversation with K.A.N.T.A about his approach to art, creativity, and stepping beyond conventional boundaries.",
-        imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/kanta-moutakusanda-interview.jpg"
     },
     {
         id: 'p26',
