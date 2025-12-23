@@ -538,6 +538,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2020',
     domain: 'Media'
+  },
+  {
+    id: 'TOKYO-NIKE-VER1-2020',
+    title: 'NIKE JAPAN AIR PRESTO TV CM VER.1',
+    description: 'Sonic song writing composition creative commission work for NIKE',
+    thumbnailUrl: 'https://img.youtube.com/vi/4bMQPUKj7JI/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2020',
+    date: '2020-01-01',
+    tags: ['Media', 'Sports', 'Commercial'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/4bMQPUKj7JI',
+    showLink: true,
+    referenceId: 'TOKYO-2020',
+    domain: 'Media'
   }
 ];
 
