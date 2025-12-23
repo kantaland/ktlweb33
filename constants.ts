@@ -643,6 +643,21 @@ export const MOCK_VIDEOS: Video[] = [
     showLink: true,
     referenceId: 'TOKYO-2012',
     domain: 'Music'
+  },
+  {
+    id: 'KANGOL-75TH-FASHION-2014SS',
+    title: 'KANGOL 75th ANNIVERSARY FASHION SHOW 2014 S/S',
+    description: 'Fashion show performance for KANGOL',
+    thumbnailUrl: 'https://img.youtube.com/vi/mThdWPzZI8c/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2014',
+    date: '2014-01-01',
+    tags: ['Music', 'Fashion', 'Show'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/mThdWPzZI8c',
+    showLink: true,
+    referenceId: 'TOKYO-2014',
+    domain: 'Music'
   }
 ];
 
