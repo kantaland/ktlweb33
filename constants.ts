@@ -160,9 +160,9 @@ export const MOCK_PRESS: PressRelease[] = [
         title: "Release of the track and music video \"MONKEY TALK\" through a triple collaboration with Reebok CLASSIC",
         outlet: "FLJ TOKYO",
         date: "2018-04-05",
-        url: "https://fljtoyo.jp",
+        url: "https://fljtokyo.com/music/anarchy-k-a-n-t-a/",
         snippet: "ANARCHY, the widely renowned rapper from the Mukōjima housing projects in Kyoto. And K.A.N.T.A, the music artist who made his album debut in 2011 with Royal New Standard.",
-        imageUrl: "https://images.unsplash.com/photo-1511379938547-c1f69b13d835?q=80&w=1000&auto=format&fit=crop"
+        imageUrl: "/monkey-talk-article.jpg"
     },
     {
         id: 'p15',
