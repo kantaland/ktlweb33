@@ -412,6 +412,19 @@ export const MOCK_VIDEOS: Video[] = [
     linkUrl: 'https://youtu.be/GLYc8ZttdLw',
     showLink: true,
     referenceId: 'TOKYO-2016'
+  },
+  {
+    id: 'TOKYO-NEWBALANCE-996',
+    title: '996 NEW BALANCE TV CM',
+    description: 'Sonic song writing composition creative commission work for NEW BALANCE',
+    thumbnailUrl: 'https://img.youtube.com/vi/yl0DllPWFhU/maxresdefault.jpg',
+    views: 'M3-ARC',
+    uploadedAt: '2018',
+    tags: ['Commercial', 'Music', 'Brand'],
+    mediaType: 'youtube',
+    linkUrl: 'https://youtu.be/yl0DllPWFhU',
+    showLink: true,
+    referenceId: 'TOKYO-2018'
   }
 ];
 
