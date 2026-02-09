@@ -62,7 +62,16 @@ const Incubator: React.FC = () => {
                                 ))}
                             </div>
 
-                            <button className="w-full py-6 px-8 border border-white/20 hover:border-white text-white text-xs font-bold tracking-[0.2em] uppercase transition-all flex items-center justify-between group/btn overflow-hidden relative">
+                            <button 
+                                onClick={() => {
+                                    if ((protocol as any).link) {
+                                        window.open((protocol as any).link, '_blank');
+                                    } else if ((protocol as any).email) {
+                                        window.location.href = `mailto:${(protocol as any).email}`;
+                                    }
+                                }}
+                                className="w-full py-6 px-8 border border-white/20 hover:border-white text-white text-xs font-bold tracking-[0.2em] uppercase transition-all flex items-center justify-between group/btn overflow-hidden relative"
+                            >
                                 <span className="relative z-10">{protocol.cta}</span>
                                 <ArrowRight size={16} className="relative z-10 transform translate-x-0 group-hover/btn:translate-x-1 transition-transform" />
                                 <div className="absolute inset-0 bg-white transform translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300 ease-out opacity-10" />

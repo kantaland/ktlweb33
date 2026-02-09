@@ -21,9 +21,10 @@ export const INCUBATOR_TEXT = {
     {
       id: 'lite',
       title: "LITE PROTOCOL",
-      subtitle: "Strategic stream dominance.",
+      subtitle: "Strategic stream dominance (Spotify Only).",
       price: "300",
       cta: "SELECT CONFIGURATION",
+      link: "https://www.paypal.com/ncp/payment/UBRPHCBAW788C",
       features: [
         "100,000 Streams Allocation",
         "Catalog Dominance",
@@ -35,9 +36,10 @@ export const INCUBATOR_TEXT = {
     {
       id: 'entry',
       title: "ENTRY PROTOCOL",
-      subtitle: "System compatibility verification.",
+      subtitle: "System compatibility verification (Spotify Only).",
       price: "3,000",
       cta: "INITIATE PROTOCOL",
+      link: "https://www.paypal.com/pay?token=BA-94706121XG140854R&useraction=commit&ssrt=1770600380074&ul=1",
       features: [
         "1 Million Streams Allocation",
         "Performance Validation",
@@ -49,9 +51,10 @@ export const INCUBATOR_TEXT = {
     {
       id: 'pilot',
       title: "LABEL & RIGHTS HOLDER PILOT",
-      subtitle: "Closed 60-90 Day Catalog Pilot",
+      subtitle: "Closed 60-90 Day Catalog Pilot (Spotify Only)",
       price: "15,000",
       cta: "APPLY FOR PROTOCOL",
+      email: "aoi@urbanhippyfantasy.com",
       features: [
         "60-90 day closed engagement focused on a curated segment (100-300 tracks)",
         "Full catalog audit: performance segmentation, territory analysis, distribution",
