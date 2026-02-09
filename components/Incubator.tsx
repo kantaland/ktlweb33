@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { INCUBATOR_TEXT } from '../constants';
-import { ArrowRight, Activity, Zap, Globe, Users } from 'lucide-react';
+import { ArrowRight, Activity, Zap, Globe, Users, Check } from 'lucide-react';
 import { useAdmin } from '../contexts/AdminContext';
 import { EditableText } from './Editable';
 
@@ -35,6 +35,42 @@ const Incubator: React.FC = () => {
                     </div>
                 </div>
             </div>
+       </div>
+
+       {/* Protocols Section - Psychological Pricing Design */}
+       <div className="bg-black py-32 border-y border-white/10">
+           <div className="max-w-[1600px] mx-auto px-6 md:px-12">
+                <span className="text-xs font-bold tracking-brand uppercase text-gray-400 mb-16 block pl-4 border-l-2 border-white">Incubation Tools</span>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-l border-t border-white/10">
+                    {INCUBATOR_TEXT.protocols.map((protocol, idx) => (
+                        <div key={idx} className="bg-black p-12 hover:bg-zinc-900 transition-all duration-500 h-full flex flex-col border-r border-b border-white/10 group">
+                            <div className="mb-12">
+                                <h3 className="text-2xl font-bold tracking-widest uppercase text-white mb-2">{protocol.title}</h3>
+                                <p className="text-sm text-gray-500 uppercase tracking-wider mb-8">{protocol.subtitle}</p>
+                                <div className="flex items-baseline gap-1 mb-12">
+                                    <span className="text-xl text-gray-400 font-light">$</span>
+                                    <span className="text-6xl font-normal text-white tracking-tighter">{protocol.price}</span>
+                                </div>
+                            </div>
+                            
+                            <div className="space-y-4 mb-16 flex-grow">
+                                {protocol.features.map((feature, fIdx) => (
+                                    <div key={fIdx} className="flex items-start gap-3">
+                                        <Check size={16} className="text-white mt-1 shrink-0 opacity-40 group-hover:opacity-100 transition-opacity" />
+                                        <span className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-200 transition-colors">{feature}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <button className="w-full py-6 px-8 border border-white/20 hover:border-white text-white text-xs font-bold tracking-[0.2em] uppercase transition-all flex items-center justify-between group/btn overflow-hidden relative">
+                                <span className="relative z-10">{protocol.cta}</span>
+                                <ArrowRight size={16} className="relative z-10 transform translate-x-0 group-hover/btn:translate-x-1 transition-transform" />
+                                <div className="absolute inset-0 bg-white transform translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300 ease-out opacity-10" />
+                            </button>
+                        </div>
+                    ))}
+                </div>
+           </div>
        </div>
 
        {/* Features Grid - Precise 1px borders */}

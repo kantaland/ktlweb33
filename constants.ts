@@ -16,6 +16,51 @@ export const INCUBATOR_TEXT = {
     { title: "Visual Ecosystems", desc: "High-frequency visual direction, from streetwear to digital environments." },
     { title: "Strategic Capital", desc: "Connecting creative visionaries with the financial velocity to scale." },
     { title: "Global Distribution", desc: "Direct pipelines to Tokyo, Los Angeles, and London markets." }
+  ],
+  protocols: [
+    {
+      id: 'lite',
+      title: "LITE PROTOCOL",
+      subtitle: "Strategic stream dominance.",
+      price: "300",
+      cta: "SELECT CONFIGURATION",
+      features: [
+        "100,000 Streams Allocation",
+        "Catalog Dominance",
+        "Priority Processing",
+        "Non-Recurring",
+        "Strategic Alignment"
+      ]
+    },
+    {
+      id: 'entry',
+      title: "ENTRY PROTOCOL",
+      subtitle: "System compatibility verification.",
+      price: "3,000",
+      cta: "INITIATE PROTOCOL",
+      features: [
+        "1 Million Streams Allocation",
+        "Performance Validation",
+        "Backend Compatibility",
+        "Non-Recurring",
+        "Prerequisite for Core"
+      ]
+    },
+    {
+      id: 'pilot',
+      title: "LABEL & RIGHTS HOLDER PILOT",
+      subtitle: "Closed 60-90 Day Catalog Pilot",
+      price: "15,000",
+      cta: "APPLY FOR PROTOCOL",
+      features: [
+        "60-90 day closed engagement focused on a curated segment (100-300 tracks)",
+        "Full catalog audit: performance segmentation, territory analysis, distribution",
+        "Hands-on acceleration: strategy, campaigns, and optimization cycles",
+        "Before/after reporting on streams, long-tail activity, and floor stability",
+        "100% credited toward first 12-month agreement if you continue",
+        "Optional royalty-backed financing via RTHM Fund (Independent approval required)"
+      ]
+    }
   ]
 };
 
